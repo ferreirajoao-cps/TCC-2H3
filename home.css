@@ -1,0 +1,254 @@
+        /* Estilos personalizados para a página do BrainByte */
+        body {
+            margin: 0;
+            /* Remove as margens padrão */
+            font-family: Arial, sans-serif;
+            /* Define a fonte padrão */
+                background: #313131;
+                background: -webkit-linear-gradient(to right, #5b3aff, #ff8521);
+                background: linear-gradient(to right, #5b3aff, #ff8521);
+            /* Define a cor de fundo */
+        }
+
+        .header {
+            display: flex;
+            /* Exibe o cabeçalho como uma caixa flexível */
+            align-items: center;
+            /* Alinha os itens verticalmente */
+            justify-content: space-between;
+            /* Distribui os itens horizontalmente */
+            padding: 10px;
+            /* Define o espaçamento interno */
+            background-color: #317fd9;
+            /* Define a cor de fundo */
+        }
+
+        .logo {
+            display: block;
+            /* Exibe a logo como um bloco */
+            width: 40px;
+            /* Define a largura da logo */
+        }
+
+        .menu {
+            display: flex;
+            /* Exibe o menu como uma caixa flexível */
+            list-style: none;
+            /* Remove os marcadores da lista */
+            margin: 0;
+            /* Remove as margens da lista */
+            padding: 0;
+            /* Remove o espaçamento da lista */
+        }
+
+        .menu li {
+            margin-left: 10px;
+            /* Define a margem esquerda dos itens */
+        }
+
+        .menu a {
+            display: block;
+            /* Exibe os links como blocos */
+            padding: 5px 10px;
+            /* Define o espaçamento interno dos links */
+            color: #fff;
+            /* Define a cor dos links */
+            text-decoration: none;
+            /* Remove o sublinhado dos links */
+        }
+
+        .menu a:hover {
+            background-color: #444;
+            /* Define a cor de fundo dos links ao passar o mouse */
+        }
+
+        .username {
+            display: flex;
+            /* Exibe o nome de usuário como uma caixa flexível */
+            align-items: center;
+            /* Alinha os itens verticalmente */
+            color: #fff;
+            /* Define a cor do texto */
+        }
+
+        .username img {
+            display: block;
+            /* Exibe a imagem como um bloco */
+            width: 30px;
+            /* Define a largura da imagem */
+            height: 30px;
+            /* Define a altura da imagem */
+            border-radius: 50%;
+            /* Define as bordas arredondadas da imagem */
+            margin-right: 10px;
+            /* Define a margem direita da imagem */
+        }
+
+        .main {
+            display: flex;
+            /* Exibe o conteúdo principal como uma caixa flexível */
+            height: calc(100vh - 60px);
+            /* Define a altura do conteúdo como a altura da tela menos a altura do cabeçalho */
+        }
+
+        .sidebar {
+            width: 200px;
+            /* Define a largura da barra lateral */
+            background-color: #333;
+            /* Define a cor de fundo da barra lateral */
+        }
+
+        .sidebar ul {
+            list-style: none;
+            /* Remove os marcadores da lista */
+            margin: 0;
+            /* Remove as margens da lista */
+            padding: 0;
+            /* Remove o espaçamento da lista */
+        }
+
+        .sidebar li {
+            display: block;
+            /* Exibe os itens como blocos */
+            border-bottom: 1px solid #444;
+            /* Define a borda inferior dos itens */
+        }
+
+        .sidebar a {
+            display: block;
+            /* Exibe os links como blocos */
+            padding: 20px;
+            /* Define o espaçamento interno dos links */
+            color: #fff;
+            /* Define a cor dos links */
+            text-decoration: none;
+            /* Remove o sublinhado dos links */
+            text-align: center;
+            /* Centraliza o texto dos links */
+        }
+
+        .sidebar a:hover {
+            background-color: #444;
+            /* Define a cor de fundo dos links ao passar o mouse */
+        }
+
+        .content {
+            flex: 1;
+            /* Define o conteúdo como flexível */
+            display: flex;
+            /* Exibe o conteúdo como uma caixa flexível */
+            flex-direction: column;
+            /* Define a direção da caixa como coluna */
+            align-items: center;
+            /* Alinha os itens horizontalmente */
+            justify-content: center;
+            /* Alinha os itens verticalmente */
+        }
+
+        .content h1 {
+            color: #fff;
+            /* Define a cor do título */
+            margin-bottom: 20px;
+            /* Define a margem inferior do título */
+        }
+
+        .content ul {
+            display: flex;
+            /* Exibe a lista como uma caixa flexível */
+            list-style: none;
+            /* Remove os marcadores da lista */
+            margin: 0;
+            /* Remove as margens da lista */
+            padding: 0;
+            /* Remove o espaçamento da lista */
+        }
+
+        .content li {
+            margin: 0 10px;
+            /* Define as margens dos itens */
+        }
+
+        .content button {
+            display: block;
+            /* Exibe os botões como blocos */
+            width: 100px;
+            /* Define a largura dos botões */
+            height: 100px;
+            /* Define a altura dos botões */
+            border: none;
+            /* Remove a borda dos botões */
+            border-radius: 10px;
+            /* Define as bordas arredondadas dos botões */
+            background-color: #00f;
+            /* Define a cor de fundo dos botões */
+            color: #fff;
+            /* Define a cor do texto dos botões */
+            font-size: 20px;
+            /* Define o tamanho da fonte dos botões */
+            cursor: pointer;
+            /* Muda o cursor para uma mão */
+        }
+
+        .content button:hover {
+            background-color: #0f0;
+            /* Define a cor de fundo dos botões ao passar o mouse */
+        }
+
+        .ranking {
+            width: 200px;
+            /* Define a largura da caixa de ranking */
+            height: 300px;
+            /* Define a altura da caixa de ranking */
+            background-color: #000;
+            /* Define a cor de fundo da caixa de ranking */
+            position: absolute;
+            /* Define a posição da caixa de ranking como absoluta */
+            top: 50%;
+            /* Define a posição superior da caixa de ranking como 50% da altura da tela */
+            right: 0;
+            /* Define a posição direita da caixa de ranking como 0 */
+            transform: translateY(-50%);
+            /* Move a caixa de ranking para cima em 50% da sua altura */
+        }
+
+        .arrow {
+            display: block;
+            /* Exibe as setas como blocos */
+            width: 50px;
+            /* Define a largura das setas */
+            height: 50px;
+            /* Define a altura das setas */
+            border: none;
+            /* Remove a borda das setas */
+            border-radius: 50%;
+            /* Define as bordas arredondadas das setas */
+            background-color: #333;
+            /* Define a cor de fundo das setas */
+            color: #fff;
+            /* Define a cor do texto das setas */
+            font-size: 30px;
+            /* Define o tamanho da fonte das setas */
+            cursor: pointer;
+            /* Muda o cursor para uma mão */
+            position: absolute;
+            /* Define a posição das setas como absoluta */
+            top: 50%;
+            /* Define a posição superior das setas como 50% da altura da tela */
+            transform: translateY(-50%);
+            /* Move as setas para cima em 50% da sua altura */
+        }
+
+        .arrow-left {
+            left: 0;
+            /* Define a posição esquerda da seta esquerda como 0 */
+        }
+
+        .arrow-right {
+            right: 0;
+            /* Define a posição direita da seta direita como 0 */
+        }
+
+        h1{
+            text-align: center;
+            color: #0f0;
+        }
