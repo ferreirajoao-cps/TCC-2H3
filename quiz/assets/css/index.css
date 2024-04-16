@@ -1,0 +1,162 @@
+body {
+    background: #313131;
+    background: -webkit-linear-gradient(to right, #5b3aff, #ff8521);
+    background: linear-gradient(to right, #5b3aff, #ff8521);
+}
+
+#logo {
+    width: 16rem;
+    height: 16rem;
+    margin: auto;
+    margin-top: -2.5rem;
+    display: block;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;        
+}
+
+.text-t {
+    color: black;
+    font-size: 2.5rem;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border: 0.125rem solid #000;
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.9375rem;
+    font-weight: bold;
+    background-color: rgba(241, 241, 241, 0.5);
+    text-align: center;
+}
+
+.textc {
+    text-align: center;
+    font-weight: bold;
+}
+
+.textcb {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.regras {
+    color: black;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border: 0.125rem solid #000;
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.9375rem;
+    font-weight: bold;
+    font-size: 1.125rem;
+    background-color: rgba(241, 241, 241, 0.5);
+}
+
+.btn {
+    cursor: crosshair;
+    padding-top: 10px;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(47, 134, 255);
+    height: 64px;
+    width: 25%;
+    max-width: 450px;
+    border-radius: 0.9375rem;
+    transition: box-shadow 0.3s; /* Adiciona transição suave na sombra */
+    border: 0.125rem solid #000000; /* Adiciona a borda preta */
+}
+
+.playicon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.btn:hover {
+    background-color: rgb(57, 97, 230);
+    border: 0.125rem solid #000000; /* Adiciona a borda preta */
+    cursor: crosshair;
+}
+
+.header {
+    font-weight: bold;
+    display: flex;
+    /* Exibe o cabeçalho como uma caixa flexível */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    justify-content: space-between;
+    /* Distribui os itens horizontalmente */
+    padding: 10px;
+    /* Define o espaçamento interno */
+    background-color: rgb(57, 97, 230);
+    /* Define a cor de fundo */
+}
+.menu {
+    display: flex;
+    /* Exibe o menu como uma caixa flexível */
+    list-style: none;
+    /* Remove os marcadores da lista */
+    margin: 0;
+    /* Remove as margens da lista */
+    padding: 0;
+    /* Remove o espaçamento da lista */
+}
+
+.menu li {
+    margin-left: 10px;
+    /* Define a margem esquerda dos itens */
+}
+
+.menu a {
+    display: block;
+    /* Exibe os links como blocos */
+    padding: 5px 10px;
+    /* Define o espaçamento interno dos links */
+    color: #fff;
+    /* Define a cor dos links */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+}
+
+.menu a:hover {
+    background-color: #444;
+    /* Define a cor de fundo dos links ao passar o mouse */
+}
+
+.username {
+    display: flex;
+    /* Exibe o nome de usuário como uma caixa flexível */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    color: #fff;
+    /* Define a cor do texto */
+}
+
+.username img {
+    display: block;
+    /* Exibe a imagem como um bloco */
+    width: 30px;
+    /* Define a largura da imagem */
+    height: 30px;
+    /* Define a altura da imagem */
+    border-radius: 50%;
+    /* Define as bordas arredondadas da imagem */
+    margin-right: 10px;
+    /* Define a margem direita da imagem */
+}
+#logo2{
+ width: 170px;
+ padding-top: 10px;
+}
+
+/* * {
+    cursor: crosshair;
+} */
