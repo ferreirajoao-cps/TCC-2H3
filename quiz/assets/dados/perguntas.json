@@ -1,5 +1,5 @@
 [
- 
+    
     {
         "NUMERO": 99999,
         "PERGUNTA": "Qual é a soma de 81 + 42?",
@@ -10,7 +10,7 @@
         "CERTA": "1",
         "NIVEL": "A",
         "JA_FOI": "N",
-        "MATERIA": "M"
+        "MATERIA": "A"
     },
     {
         "NUMERO": 99999,
@@ -22,7 +22,7 @@
         "CERTA": "1",
         "NIVEL": "A",
         "JA_FOI": "N",
-        "MATERIA": "M"
+        "MATERIA": "A"
     },
     {
         "NUMERO": 99999,
@@ -34,7 +34,7 @@
         "CERTA": "1",
         "NIVEL": "A",
         "JA_FOI": "N",
-        "MATERIA": "M"
+        "MATERIA": "A"
     },
     {
         "NUMERO": 99999,
@@ -46,7 +46,7 @@
         "CERTA": "1",
         "NIVEL": "A",
         "JA_FOI": "N",
-        "MATERIA": "M"
+        "MATERIA": "A"
     },
     {
         "NUMERO": 99999,
@@ -58,7 +58,7 @@
         "CERTA": "1",
         "NIVEL": "B",
         "JA_FOI": "N",
-        "MATERIA": "M"
+        "MATERIA": "A"
     },
       {
           "NUMERO": 99999,
@@ -70,7 +70,7 @@
           "CERTA": "1",
           "NIVEL": "A",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -82,7 +82,7 @@
           "CERTA": "1",
           "NIVEL": "A",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -94,7 +94,7 @@
           "CERTA": "1",
           "NIVEL": "A",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -106,7 +106,7 @@
           "CERTA": "1",
           "NIVEL": "A",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -118,7 +118,7 @@
           "CERTA": "3",
           "NIVEL": "A",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -130,7 +130,7 @@
           "CERTA": "1",
           "NIVEL": "A",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -142,7 +142,7 @@
           "CERTA": "4",
           "NIVEL": "A",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -154,7 +154,7 @@
           "CERTA": "4",
           "NIVEL": "A",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -166,7 +166,7 @@
           "CERTA": "4",
           "NIVEL": "A",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -178,7 +178,7 @@
           "CERTA": "4",
           "NIVEL": "A",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
         "NUMERO": 99999,
@@ -190,7 +190,7 @@
         "CERTA": "1",
         "NIVEL": "A",
         "JA_FOI": "N",
-        "MATERIA": "M"
+        "MATERIA": "A"
     },
     {
         "NUMERO": 99999,
@@ -202,7 +202,7 @@
         "CERTA": "1",
         "NIVEL": "B",
         "JA_FOI": "N",
-        "MATERIA": "M"
+        "MATERIA": "A"
     },
     {
         "NUMERO": 99999,
@@ -214,7 +214,7 @@
         "CERTA": "1",
         "NIVEL": "B",
         "JA_FOI": "N",
-        "MATERIA": "M"
+        "MATERIA": "A"
     },
     {
         "NUMERO": 99999,
@@ -226,7 +226,7 @@
         "CERTA": "3",
         "NIVEL": "B",
         "JA_FOI": "N",
-        "MATERIA": "M"
+        "MATERIA": "A"
     },
     {
         "NUMERO": 99999,
@@ -238,7 +238,7 @@
         "CERTA": "2",
         "NIVEL": "B",
         "JA_FOI": "N",
-        "MATERIA": "M"
+        "MATERIA": "A"
     },
       {
           "NUMERO": 99999,
@@ -250,7 +250,7 @@
           "CERTA": "4",
           "NIVEL": "B",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -262,7 +262,7 @@
           "CERTA": "1",
           "NIVEL": "B",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -274,7 +274,7 @@
           "CERTA": "2",
           "NIVEL": "B",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -286,7 +286,7 @@
           "CERTA": "3",
           "NIVEL": "B",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -298,7 +298,7 @@
           "CERTA": "1",
           "NIVEL": "B",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -310,7 +310,7 @@
           "CERTA": "1",
           "NIVEL": "B",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -322,7 +322,7 @@
           "CERTA": "4",
           "NIVEL": "B",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -334,7 +334,7 @@
           "CERTA": "4",
           "NIVEL": "B",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -346,7 +346,7 @@
           "CERTA": "4",
           "NIVEL": "B",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
       {
           "NUMERO": 99999,
@@ -358,7 +358,7 @@
           "CERTA": "4",
           "NIVEL": "B",
           "JA_FOI": "N",
-          "MATERIA": "M"
+          "MATERIA": "A"
       },
         {
             "NUMERO": 99999,
@@ -370,7 +370,7 @@
             "CERTA": "1",
             "NIVEL": "C",
             "JA_FOI": "N",
-            "MATERIA": "M"
+            "MATERIA": "A"
         },
         {
             "NUMERO": 99999,
@@ -382,7 +382,7 @@
             "CERTA": "1",
             "NIVEL": "C",
             "JA_FOI": "N",
-            "MATERIA": "M"
+            "MATERIA": "A"
         },
         {
             "NUMERO": 99999,
@@ -394,7 +394,7 @@
             "CERTA": "3",
             "NIVEL": "C",
             "JA_FOI": "N",
-            "MATERIA": "M"
+            "MATERIA": "A"
         },
         {
             "NUMERO": 99999,
@@ -406,7 +406,7 @@
             "CERTA": "1",
             "NIVEL": "C",
             "JA_FOI": "N",
-            "MATERIA": "M"
+            "MATERIA": "A"
         },
         {
             "NUMERO": 99999,
@@ -418,7 +418,7 @@
             "CERTA": "2",
             "NIVEL": "C",
             "JA_FOI": "N",
-            "MATERIA": "M"
+            "MATERIA": "A"
         },
         {
             "NUMERO": 99999,
@@ -430,7 +430,7 @@
             "CERTA": "3",
             "NIVEL": "C",
             "JA_FOI": "N",
-            "MATERIA": "M"
+            "MATERIA": "A"
         },
         {
             "NUMERO": 99999,
@@ -442,7 +442,7 @@
             "CERTA": "1",
             "NIVEL": "C",
             "JA_FOI": "N",
-            "MATERIA": "M"
+            "MATERIA": "A"
         },
         {
             "NUMERO": 99999,
@@ -454,7 +454,7 @@
             "CERTA": "2",
             "NIVEL": "C",
             "JA_FOI": "N",
-            "MATERIA": "M"
+            "MATERIA": "A"
         },
         {
             "NUMERO": 99999,
@@ -466,8 +466,191 @@
             "CERTA": "3",
             "NIVEL": "C",
             "JA_FOI": "N",
-            "MATERIA": "M"
-        }
+            "MATERIA": "A"
+        },
+        
+
+
+        {
+        "NUMERO": 1,
+        "PERGUNTA": "Qual é o resultado da subtração 9 - 4?",
+        "RESP1": "3",
+        "RESP2": "5",
+        "RESP3": "6",
+        "RESP4": "-5",
+        "CERTA": "2",
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 2,
+        "PERGUNTA": "Qual é o resultado da subtração 15 - 7?",
+        "RESP1": "8",
+        "RESP2": "9",
+        "RESP3": "10",
+        "RESP4": "-8",
+        "CERTA": "1",
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 3,
+        "PERGUNTA": "Qual é o resultado da subtração 25 - 13?",
+        "RESP1": "12",
+        "RESP2": "13",
+        "RESP3": "14",
+        "RESP4": "-12",
+        "CERTA": "1",
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 4,
+        "PERGUNTA": "Qual é o resultado da subtração 48 - 23?",
+        "RESP1": "25",
+        "RESP2": "26",
+        "RESP3": "27",
+        "RESP4": "-25",
+        "CERTA": "1",
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 5,
+        "PERGUNTA": "Qual é o resultado da subtração 113 - 78?",
+        "RESP1": "34",
+        "RESP2": "35",
+        "RESP3": "36",
+        "RESP4": "-35",
+        "CERTA": "2",
+        "NIVEL": "B",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 6,
+        "PERGUNTA": "Qual é o resultado da subtração 257 - 149?",
+        "RESP1": "108",
+        "RESP2": "107",
+        "RESP3": "109",
+        "RESP4": "-108",
+        "CERTA": "1",
+        "NIVEL": "B",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 7,
+        "PERGUNTA": "Qual é o resultado da subtração 483 - 256?",
+        "RESP1": "227",
+        "RESP2": "226",
+        "RESP3": "228",
+        "RESP4": "-227",
+        "CERTA": "1",
+        "NIVEL": "B",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 8,
+        "PERGUNTA": "Qual é o resultado da subtração 968 - 427?",
+        "RESP1": "541",
+        "RESP2": "542",
+        "RESP3": "540",
+        "RESP4": "-541",
+        "CERTA": "1",
+        "NIVEL": "B",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 9,
+        "PERGUNTA": "Qual é o resultado da subtração 5001 - 2345?",
+        "RESP1": "2656",
+        "RESP2": "2655",
+        "RESP3": "2657",
+        "RESP4": "-2656",
+        "CERTA": "1",
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 10,
+        "PERGUNTA": "Qual é o resultado da subtração 9876 - 1234?",
+        "RESP1": "8642",
+        "RESP2": "8641",
+        "RESP3": "8643",
+        "RESP4": "-8642",
+        "CERTA": "1",
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 11,
+        "PERGUNTA": "Qual é o resultado da subtração 10000 - 8765?",
+        "RESP1": "1235",
+        "RESP2": "1236",
+        "RESP3": "1234",
+        "RESP4": "-1235",
+        "CERTA": "1",
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 12,
+        "PERGUNTA": "Qual é o resultado da subtração 54321 - 12345?",
+        "RESP1": "41976",
+        "RESP2": "41975",
+        "RESP3": "41977",
+        "RESP4": "-41976",
+        "CERTA": "1",
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 13,
+        "PERGUNTA": "Qual é o resultado da subtração 876543 - 123456?",
+        "RESP1": "753087",
+        "RESP2": "753086",
+        "RESP3": "753088",
+        "RESP4": "-753087",
+        "CERTA": "1",
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 14,
+        "PERGUNTA": "Qual é o resultado da subtração 1000000 - 123456?",
+        "RESP1": "876544",
+        "RESP2": "876543",
+        "RESP3": "876545",
+        "RESP4": "-876544",
+        "CERTA": "1",
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 15,
+        "PERGUNTA": "Qual é o resultado da subtração 10000000 - 543210?",
+        "RESP1": "9456790",
+        "RESP2": "9456789",
+        "RESP3": "9456788",
+        "RESP4": "-9456790",
+        "CERTA": "1",
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    }
 
 ]
 
