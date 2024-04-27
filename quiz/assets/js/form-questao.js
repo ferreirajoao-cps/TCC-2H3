@@ -173,7 +173,7 @@ function sortear() {
 
 function parar() {
   alert('Que pena, você desistiu!!!');
-  window.location.href = "../../index.html"
+  window.location.href = "../../../indexHome.html"
 }
 
 function retornarRespostaSelecionada() {

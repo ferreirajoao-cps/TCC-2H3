@@ -472,7 +472,7 @@
 
 
         {
-        "NUMERO": 1,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 9 - 4?",
         "RESP1": "3",
         "RESP2": "5",
@@ -484,7 +484,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 2,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 15 - 7?",
         "RESP1": "8",
         "RESP2": "9",
@@ -496,7 +496,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 3,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 25 - 13?",
         "RESP1": "12",
         "RESP2": "13",
@@ -508,7 +508,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 4,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 48 - 23?",
         "RESP1": "25",
         "RESP2": "26",
@@ -520,7 +520,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 5,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 113 - 78?",
         "RESP1": "34",
         "RESP2": "35",
@@ -532,7 +532,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 6,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 257 - 149?",
         "RESP1": "108",
         "RESP2": "107",
@@ -544,7 +544,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 7,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 483 - 256?",
         "RESP1": "227",
         "RESP2": "226",
@@ -556,7 +556,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 8,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 968 - 427?",
         "RESP1": "541",
         "RESP2": "542",
@@ -568,7 +568,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 9,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 5001 - 2345?",
         "RESP1": "2656",
         "RESP2": "2655",
@@ -580,7 +580,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 10,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 9876 - 1234?",
         "RESP1": "8642",
         "RESP2": "8641",
@@ -592,7 +592,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 11,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 10000 - 8765?",
         "RESP1": "1235",
         "RESP2": "1236",
@@ -604,7 +604,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 12,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 54321 - 12345?",
         "RESP1": "41976",
         "RESP2": "41975",
@@ -616,7 +616,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 13,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 876543 - 123456?",
         "RESP1": "753087",
         "RESP2": "753086",
@@ -628,7 +628,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 14,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 1000000 - 123456?",
         "RESP1": "876544",
         "RESP2": "876543",
@@ -640,7 +640,7 @@
         "MATERIA": "S"
     },
     {
-        "NUMERO": 15,
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 10000000 - 543210?",
         "RESP1": "9456790",
         "RESP2": "9456789",
@@ -650,7 +650,44 @@
         "NIVEL": "C",
         "JA_FOI": "N",
         "MATERIA": "S"
-    }
+    },
 
+    {
+        "NUMERO": 99999,
+        "PERGUNTA": "Qual é o resultado da multiplicação 12345 * 6789?",
+        "RESP1": "83810205",
+        "RESP2": "83810204",
+        "RESP3": "83810206",
+        "RESP4": "-83810205",
+        "CERTA": "1",
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 99999,
+        "PERGUNTA": "Qual é o resultado da multiplicação 11111 * 22222?",
+        "RESP1": "246913342",
+        "RESP2": "246913341",
+        "RESP3": "246913343",
+        "RESP4": "-246913342",
+        "CERTA": "1",
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 99999,
+        "PERGUNTA": "Qual é o resultado da multiplicação 33333 * 44444?",
+        "RESP1": "1481481852",
+        "RESP2": "1481481851",
+        "RESP3": "1481481853",
+        "RESP4": "-1481481852",
+        "CERTA": "1",
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    }
+    
 ]
 
