@@ -652,6 +652,8 @@
         "MATERIA": "S"
     },
 
+
+    
     {
         "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da multiplicação 12345 * 6789?",
@@ -660,7 +662,7 @@
         "RESP3": "83810206",
         "RESP4": "-83810205",
         "CERTA": "1",
-        "NIVEL": "C",
+        "NIVEL": "A",
         "JA_FOI": "N",
         "MATERIA": "M"
     },
@@ -672,7 +674,7 @@
         "RESP3": "246913343",
         "RESP4": "-246913342",
         "CERTA": "1",
-        "NIVEL": "C",
+        "NIVEL": "A",
         "JA_FOI": "N",
         "MATERIA": "M"
     },
@@ -684,7 +686,7 @@
         "RESP3": "1481481853",
         "RESP4": "-1481481852",
         "CERTA": "1",
-        "NIVEL": "C",
+        "NIVEL": "A",
         "JA_FOI": "N",
         "MATERIA": "M"
     }
