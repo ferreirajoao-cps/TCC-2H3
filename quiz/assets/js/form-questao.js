@@ -1,5 +1,7 @@
-import perguntas from
-  '../dados/perguntas.json' assert { type: 'json'};
+const response = await fetch("../dados/perguntas.json");
+const perguntas = await response.json();
+
+//import * as perguntas from '../dados/perguntas.json' assert { type: 'json'};
 
 //Variáveis
 // let tempoRestante = 60; // Tempo em segundos (ajuste conforme necessário)
