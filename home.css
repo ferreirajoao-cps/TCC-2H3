@@ -62,28 +62,6 @@
             /* Define a cor de fundo dos links ao passar o mouse */
         }
 
-        .username {
-            display: flex;
-            /* Exibe o nome de usuário como uma caixa flexível */
-            align-items: center;
-            /* Alinha os itens verticalmente */
-            color: #fff;
-            /* Define a cor do texto */
-        }
-
-        .username img {
-            display: block;
-            /* Exibe a imagem como um bloco */
-            width: 30px;
-            /* Define a largura da imagem */
-            height: 30px;
-            /* Define a altura da imagem */
-            border-radius: 50%;
-            /* Define as bordas arredondadas da imagem */
-            margin-right: 10px;
-            /* Define a margem direita da imagem */
-        }
-
         .main {
             display: flex;
             /* Exibe o conteúdo principal como uma caixa flexível */
@@ -360,4 +338,9 @@ nav{
     border-radius: 15px;
 
     text-decoration: none;   
+}
+
+.btn {
+    width: 20%;
+    height: 20%;
 }
