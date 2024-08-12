@@ -41,6 +41,7 @@ body {
 .form-check-v {
     flex: 0 0 40%;
     display: flex;
+    min-width: 260px;
     align-items: center;
     justify-content: space-between;
     height: 4.6875rem;
@@ -111,7 +112,9 @@ body {
 .form-check-p:hover,
 .form-check-v:hover,
 .btn:hover {
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5); /* Adiciona sombra com transparência */
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
 }
 
 .btn {
@@ -138,11 +141,14 @@ body {
     background-color: greenyellow;
     border: 0.125rem solid #000000; /* Adiciona a borda preta */
     cursor: crosshair;
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
 }
 
-/* * {
+* {
     cursor: crosshair;
-} */
+}
 @media screen and (max-width: 768px) {
     .btn{
         width: 200px;

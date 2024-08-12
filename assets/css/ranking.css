@@ -1,0 +1,85 @@
+body {
+    background: #ad5389;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    background: linear-gradient(to right, #3c1053, #ad5389);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Garante que o corpo ocupe toda a altura da viewport */
+    margin: 0; /* Remove as margens padrão do corpo */
+    display: block;
+}
+
+.container {
+    border: 0.125rem solid #000;
+    border-radius: 15px; /* Aplica borda arredondada ao contêiner */
+    background-color: rgba(241, 241, 241, 0.5);
+    overflow: hidden; /* Garante que os cantos arredondados sejam visíveis */
+    margin-top: 15px;
+}
+
+table {
+    width: 100%; /* Garante que a tabela ocupe 100% do contêiner */
+    border-collapse: collapse; /* Remove espaçamentos entre as células */
+    margin-bottom: 10px;
+}
+
+td, th {
+    border: 0.125rem solid #000;
+    padding: 0.5rem; /* Adiciona algum espaço interno às células */
+    text-align: center; /* Alinha o texto no centro das células */
+}
+.crown{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 25px;
+    margin-right: 5px;
+}
+h1{
+    display: inline;
+}
+.trophy, .user, .coin{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+.btn{
+    color: #000;
+    cursor: crosshair;
+    padding-top: 10px;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #FF6384;
+    height: 64px;
+    width: 25%;
+    max-width: 450px;
+    border-radius: 0.9375rem;
+    transition: box-shadow 0.3s; /* Adiciona transição suave na sombra */
+    border: 0.125rem solid #000000; /* Adiciona a borda preta */
+}
+.btn:hover {
+    background-color: #FF6384;
+    border: 0.125rem solid #000000; /* Adiciona a borda preta */
+    cursor: crosshair;
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+}
+.backicon {
+    height: 2rem;
+    width: 2rem;
+}
+* {
+    cursor: crosshair;
+}
+@media screen and (max-width: 768px) {
+    .btn{
+        width: 200px;
+        .container{
+            display: block;
+        }
+    }}
