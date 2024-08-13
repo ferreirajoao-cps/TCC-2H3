@@ -1,9 +1,9 @@
 <?php
 // Conexão com o banco de dados (substitua pelas suas informações de conexão)
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "pointskinectquiz";
+$servername = "sql5.freesqldatabase.com";
+$username = "sql5725745";
+$password = "5b8LG3q7ND";
+$dbname = "sql5725745";
 
 // Crie uma conexão
 $conn = new mysqli($servername, $username, $password, $dbname);

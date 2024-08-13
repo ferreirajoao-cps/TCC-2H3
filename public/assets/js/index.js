@@ -17,3 +17,24 @@ btnIniciarJogo.addEventListener('click', () => {
     alert('Por favor, insira seu nome antes de iniciar o jogo.');
   }
 });
+
+function enviarPontuacao(nomeJogador, pontos) {
+  fetch('matemax.free.nf/inserir_pontuacao.php', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+          nomeJogador: nomeJogador,
+          pontos: pontos
+      })
+  })
+  .then(response => response.text())
+  .then(data => {
+      console.log(data);
+      // Você pode fazer algo após enviar a pontuação, como redirecionar para o ranking
+  })
+  .catch(error => {
+      console.error('Erro:', error);
+  });
+}
