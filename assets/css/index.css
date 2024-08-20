@@ -1,7 +1,7 @@
 body {
-    background: #ad5389;
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
-    background: linear-gradient(to right, #3c1053, #ad5389);
+    background: #000000d0;
+    /* background: -webkit-linear-gradient(to right, #3c1053, #ad5389); */
+    background: linear-gradient(to right, #ff7300d0, #ff7300d0);
 }
 
 #logo {
@@ -20,7 +20,7 @@ body {
 }
 
 .text-t {
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 2.5rem;
     display: inline;
     justify-content: center;
@@ -30,7 +30,7 @@ body {
     margin-bottom: 1.25rem;
     border-radius: 0.9375rem;
     font-weight: bold;
-    background-color: rgba(241, 241, 241, 0.5);
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -56,43 +56,44 @@ body {
     border-radius: 0.9375rem;
     font-weight: bold;
     font-size: 1.125rem;
-    background-color: rgba(241, 241, 241, 0.5);
+    background-color: rgb(255, 255, 255);
 }
 
+/* Botao de jogar */
 .btn {
-    cursor: crosshair;
-    color: #000;
+    color: #000000; /* texto botao */
     padding-top: 10px;
     margin-top: 0.9375rem;
     margin-bottom: 0.9375rem;
     font-size: 1.5rem;
     font-weight: bold;
-    background-color: greenyellow;
+    background-color: rgb(0, 221, 0);
     height: 64px;
-    width: 25%;
+    width: 09%;
     max-width: 450px;
     border-radius: 0.9375rem;
     transition: box-shadow 0.3s; /* Adiciona transição suave na sombra */
-    border: 0.125rem solid #000000; /* Adiciona a borda preta */
+    border: 0.125rem solid #ffffff; /* Adiciona a borda preta */
 }
-
+#btnplay {
+    background-color: rgb(0, 221, 0);
+}
 .playicon {
     height: 2rem;
     width: 2rem;
 }
 
+/* botao cor sobreposta */
 .btn:hover {
-    background-color: greenyellow;
+    background-color: rgb(38, 189, 0);
     border: 0.125rem solid #000000; /* Adiciona a borda preta */
-    cursor: crosshair;
-    color: #000;
+    color: #ffffff;
     box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
 }
 
 * {
-    cursor: crosshair;
 }
 #nickinsert{
     color: black;
@@ -105,7 +106,7 @@ body {
     border-radius: 0.9375rem;
     font-weight: bold;
     font-size: 1.125rem;
-    background-color: rgba(241, 241, 241, 0.5);
+    background-color: rgb(255, 255, 255);
 }
 #nickinsert input{
     background-color: rgba(241, 241, 241, 0);
@@ -120,7 +121,7 @@ body {
     width: 2rem;
 }
 #btnpodium{
-    background-color: #FFCD56;
+    background-color: #fc2b2b;
 }
 @media screen and (max-width: 768px) {
     .btn{

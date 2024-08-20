@@ -1,7 +1,7 @@
 body {
-    background: #ad5389;
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
-    background: linear-gradient(to right, #3c1053, #ad5389);
+    background: #000000d0;
+    /* background: -webkit-linear-gradient(to right, #3c1053, #ad5389); */
+    background: linear-gradient(to right, #ff7300d0, #ff7300d0);
     width: 100%;
     height: 100%;
 }
@@ -29,7 +29,7 @@ body {
     margin-bottom: 1.25rem;
     border-radius: 0.9375rem;
     font-weight: bold;
-    background-color: rgba(241, 241, 241, 0.5);
+    background-color: rgb(255, 255, 255);
 }
 
 .form-check-c,
@@ -47,7 +47,7 @@ body {
     height: 4.6875rem;
     border-radius: 0.9375rem;
     border: 0.125rem solid #000000; /* Adiciona a borda preta */
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.5rem;
     padding: 0.625rem;
     transition: box-shadow 0.3s; /* Adiciona transição suave na sombra */
@@ -75,7 +75,7 @@ body {
 }
 
 .form-check-m {
-    background-color: #FF9F40; /* Laranja */
+    background-color: #ffffff; /* Laranja */
     margin-top: 1.5%;
 }
 
@@ -95,8 +95,33 @@ body {
 }
 
 .form-check-input {
-    margin-left: 0.625rem;
+    margin-left: 0.625rem;   
 }
+
+input[type='radio'] {
+    appearance: none;
+    border: 2px solid rgb(0, 0, 0); /* Cor da borda */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Estilo para a bolinha quando selecionada */
+  input[type='radio']:checked::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255); /* Cor da bolinha selecionada */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 .iconem {
     height: 4rem;
@@ -125,11 +150,11 @@ body {
     font-weight: bold;
     background-color: greenyellow;
     height: 64px;
-    width: 30%;
+    width: 20%;
     padding-top:10px;
     border-radius: 0.9375rem;
     transition: box-shadow 0.3s; /* Adiciona transição suave na sombra */
-    border: 0.125rem solid #000000; /* Adiciona a borda preta */
+    border: 0.125rem solid #ffffff; /* Adiciona a borda preta */
 }
 
 .playicon {
@@ -141,6 +166,7 @@ body {
     background-color: greenyellow;
     border: 0.125rem solid #000000; /* Adiciona a borda preta */
     cursor: crosshair;
+    color: white;
     box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
@@ -156,6 +182,9 @@ body {
             display: block;
         }
     }
+.form-check-m{
+    font-size: 1rem;
+}
 
 .form-check-g{
     margin-top: 5px;
@@ -175,4 +204,8 @@ body {
 }
 .form-check-v{
     margin-left: 0px;
+}
+.btn{
+    width: 35%;
 }}
+
