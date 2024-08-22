@@ -1,11 +1,11 @@
 
 * {
-    cursor: crosshair;
+    cursor: auto;
 }
 body {
-    background: #ad5389;
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
-    background: linear-gradient(to right, #3c1053, #ad5389);
+    background: #ffffff;
+    /* background: -webkit-linear-gradient(to right, #ff7300d0, #ff7300d0); */
+    background: linear-gradient(to right, #ff7300d0, #ff7300d0);
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
     margin-bottom: 1.25rem;
     border-radius: 0.9375rem;
     font-weight: bold;
-    background-color: rgba(241, 241, 241, 0.5);
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -48,17 +48,17 @@ body {
 
 .resp1,
 .resp3 {
-    background-color: rgba(135, 206, 235, 0.70);
+    background-color: rgba(0, 128, 167, 0.7);
 }
 
 .resp2,
 .resp4 {
-    background-color: rgba(147, 112, 219, 0.70);
+    background-color: rgba(141, 243, 8, 0.7);
 }
 
 .respostas {
-    background-color: rgba(241, 241, 241, 0.5);
-    border: 0.125rem solid #000;
+    background-color: rgb(255, 255, 255);
+    border: 0.1125rem solid #000;
     border-radius: 0.9375rem;
     padding: 0.9375rem;
 }
@@ -93,18 +93,18 @@ body {
 
 .lpulos,
 #btnPular {
-    background-color: #4BC0C0;
+    background-color: #00ffff;
 }
 
 .lerros,
 #btnParar {
-    background-color: #FF6384;
+    background-color: #ff0000dc;
 }
 
 #btnConfirmar,
 #btnPular,
 #btnParar {
-    cursor: crosshair;
+    cursor: auto;
     color: black;
     padding: 0.3125rem;
     font-weight: bold;
@@ -123,7 +123,7 @@ body {
     box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
-    cursor: crosshair;
+    cursor: auto;
 }
 
 .lnivel,
@@ -164,5 +164,5 @@ body {
     text-wrap: nowrap;
 }
 * {
-    cursor: crosshair;
+    cursor: auto;
 }
