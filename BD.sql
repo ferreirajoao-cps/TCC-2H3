@@ -20,8 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `pointskinectquiz`
 --
-CREATE DATABASE IF NOT EXISTS `pointskinectquiz` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `pointskinectquiz`;
+CREATE DATABASE IF NOT EXISTS `if0_37323049_matemax` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `if0_37323049_matemax`;
 
 -- --------------------------------------------------------
 

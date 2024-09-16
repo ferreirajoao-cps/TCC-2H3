@@ -59,6 +59,199 @@
         "JA_FOI": "N",
         "MATERIA": "A"
     },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 45 e 37?",
+        "RESP1": 82,
+        "RESP2": 72,
+        "RESP3": 92,
+        "RESP4": 62,
+        "CERTA": 1,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 75 + 34?",
+        "RESP1": 109,
+        "RESP2": 119,
+        "RESP3": 101,
+        "RESP4": 121,
+        "CERTA": 1,
+        "NIVEL": "B",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 123 + 456?",
+        "RESP1": 579,
+        "RESP2": 569,
+        "RESP3": 679,
+        "RESP4": 479,
+        "CERTA": 1,
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 999 + 1?",
+        "RESP1": 1000,
+        "RESP2": 998,
+        "RESP3": 1100,
+        "RESP4": 900,
+        "CERTA": 1,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 234 + 567?",
+        "RESP1": 801,
+        "RESP2": 791,
+        "RESP3": 901,
+        "RESP4": 691,
+        "CERTA": 1,
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 56 + 78?",
+        "RESP1": 134,
+        "RESP2": 124,
+        "RESP3": 144,
+        "RESP4": 114,
+        "CERTA": 1,
+        "NIVEL": "B",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 12 + 34?",
+        "RESP1": 46,
+        "RESP2": 56,
+        "RESP3": 36,
+        "RESP4": 26,
+        "CERTA": 2,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 89 + 11?",
+        "RESP1": 100,
+        "RESP2": 99,
+        "RESP3": 110,
+        "RESP4": 90,
+        "CERTA": 1,
+        "NIVEL": "B",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 456 + 789?",
+        "RESP1": 1245,
+        "RESP2": 1345,
+        "RESP3": 1145,
+        "RESP4": 1445,
+        "CERTA": 2,
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 1234 + 5678?",
+        "RESP1": 6912,
+        "RESP2": 6812,
+        "RESP3": 7912,
+        "RESP4": 5912,
+        "CERTA": 1,
+        "NIVEL": "D",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 987 + 654?",
+        "RESP1": 1641,
+        "RESP2": 1541,
+        "RESP3": 1741,
+        "RESP4": 1441,
+        "CERTA": 1,
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 345 + 678?",
+        "RESP1": 1023,
+        "RESP2": 1123,
+        "RESP3": 923,
+        "RESP4": 823,
+        "CERTA": 1,
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 23 + 45 + 67?",
+        "RESP1": 135,
+        "RESP2": 125,
+        "RESP3": 145,
+        "RESP4": 155,
+        "CERTA": 1,
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 111 + 222 + 333?",
+        "RESP1": 666,
+        "RESP2": 555,
+        "RESP3": 777,
+        "RESP4": 444,
+        "CERTA": 1,
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual é a soma de 256 + 189 ?",
+        "RESP1": 445,
+        "RESP2": 345,
+        "RESP3": 545,
+        "RESP4": 455,
+        "CERTA": 1,
+        "NIVEL": "B",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 123 + 456 + 789?",
+        "RESP1": 1368,
+        "RESP2": 1268,
+        "RESP3": 1468,
+        "RESP4": 1568,
+        "CERTA": 3,
+        "NIVEL": "C",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
       {
           "NUMERO": 99999,
           "PERGUNTA": "Qual é a soma de 10 + 5?",
@@ -468,7 +661,54 @@
             "MATERIA": "A"
         },
         
-
+        {
+            "NUMERO": 999,
+            "PERGUNTA": "Qual a soma de 3456 + 7890?",
+            "RESP1": 11346,
+            "RESP2": 12346,
+            "RESP3": 10346,
+            "RESP4": 11446,
+            "CERTA": 2,
+            "NIVEL": "D",
+            "JA_FOI": "N",
+            "MATERIA": "M"
+        },
+        {
+            "NUMERO": 999,
+            "PERGUNTA": "Qual a soma de 9876 + 5432?",
+            "RESP1": 15308,
+            "RESP2": 14308,
+            "RESP3": 16308,
+            "RESP4": 17308,
+            "CERTA": 1,
+            "NIVEL": "D",
+            "JA_FOI": "N",
+            "MATERIA": "M"
+        },
+        {
+            "NUMERO": 999,
+            "PERGUNTA": "Resolva: 1234 + 5678 + 9012",
+            "RESP1": 15924,
+            "RESP2": 16924,
+            "RESP3": 17924,
+            "RESP4": 14924,
+            "CERTA": 2,
+            "NIVEL": "D",
+            "JA_FOI": "N",
+            "MATERIA": "M"
+        },
+        {
+            "NUMERO": 999,
+            "PERGUNTA": "Qual a soma de 345,67 + 890,12?",
+            "RESP1": 1235.79,
+            "RESP2": 1234.79,
+            "RESP3": 1135.79,
+            "RESP4": 1245.79,
+            "CERTA": 1,
+            "NIVEL": "D",
+            "JA_FOI": "N",
+            "MATERIA": "M"
+        },
 
         {
         "NUMERO": 99999,
@@ -591,6 +831,18 @@
         "MATERIA": "S"
     },
     {
+        "NUMERO": 999,
+        "PERGUNTA": "Resolva: 1235 + 5678 + 9012",
+        "RESP1": 15924,
+        "RESP2": 16925,
+        "RESP3": 17924,
+        "RESP4": 14924,
+        "CERTA": 2,
+        "NIVEL": "D",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
         "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 10000 - 8765?",
         "RESP1": "1235",
@@ -602,6 +854,67 @@
         "JA_FOI": "N",
         "MATERIA": "S"
     },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 256,33 + 543,67?",
+        "RESP1": 800.00,
+        "RESP2": 799.99,
+        "RESP3": 799.87,
+        "RESP4": 800.10,
+        "CERTA": 1,
+        "NIVEL": "D",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 123,45 + 876,55?",
+        "RESP1": 999.11,
+        "RESP2": 1000.00,
+        "RESP3": 999.99,
+        "RESP4": 1001.00,
+        "CERTA": 2,
+        "NIVEL": "D",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 432,10 + 567,90?",
+        "RESP1": 1000.00,
+        "RESP2": 999.00,
+        "RESP3": 1001.00,
+        "RESP4": 999.99,
+        "CERTA": 3,
+        "NIVEL": "D",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 654,32 + 345,68?",
+        "RESP1": 999.90,
+        "RESP2": 1001.00,
+        "RESP3": 1000.00,
+        "RESP4": 1000.10,
+        "CERTA": 4,
+        "NIVEL": "D",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a soma de 789,01 + 210,99?",
+        "RESP1": 1000.00,
+        "RESP2": 999.99,
+        "RESP3": 1001.00,
+        "RESP4": 1001.10,
+        "CERTA": 1,
+        "NIVEL": "D",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+ 
     {
         "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 54321 - 12345?",
@@ -649,10 +962,7 @@
         "NIVEL": "C",
         "JA_FOI": "N",
         "MATERIA": "S"
-    },
-
-
-    
+    },    
     {
         "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da multiplicação 12 * 34?",

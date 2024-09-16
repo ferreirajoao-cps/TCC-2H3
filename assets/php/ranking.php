@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/ranking.css ">
     <link rel="shortcut icon" href="../images/geral/logo.png" type="image/x-icon">
-    <title>Kinect - Quiz</title>
+    <title>MateMax</title>
 </head>
 <body>
     <div class="container">
 <?php
 // Conexão com o banco de dados (substitua pelas suas informações de conexão)
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "pointskinectquiz";
+$servername = "sql204.infinityfree.com";
+$username = "if0_37323049";
+$password = "SC9Ln7M36S";
+$dbname = "if0_37323049_matemax";
 
 // Crie uma conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
