@@ -70,6 +70,7 @@ function validarResposta() {
 
         if (pontuacao == 20) {
             alert('Parabéns... VOCÊ GANHOU!!!');
+            enviarpontuacao();
             window.location.href = "../../index.html";
         } else {
             nivel = pontuacao <= 4 ? 'A' :
