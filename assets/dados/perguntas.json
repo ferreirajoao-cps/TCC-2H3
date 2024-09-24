@@ -532,11 +532,11 @@
       {
           "NUMERO": 99999,
           "PERGUNTA": "Qual é a soma de 325 + 278?",
-          "RESP1": "30",
-          "RESP2": "20",
-          "RESP3": "25",
-          "RESP4": "60",
-          "CERTA": "4",
+          "RESP1": "633",
+          "RESP2": "613",
+          "RESP3": "603",
+          "RESP4": "602",
+          "CERTA": "3",
           "NIVEL": "B",
           "JA_FOI": "N",
           "MATERIA": "A"
@@ -915,7 +915,140 @@
         "JA_FOI": "N",
         "MATERIA": "A"
     },
- 
+
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual o resultado de 2 x 3?",
+        "RESP1": 6,
+        "RESP2": 5,
+        "RESP3": 7,
+        "RESP4": 4,
+        "CERTA": 1,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual o resultado de 4 x 5?",
+        "RESP1": 19,
+        "RESP2": 20,
+        "RESP3": 21,
+        "RESP4": 18,
+        "CERTA": 2,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual o resultado de 6 x 7?",
+        "RESP1": 40,
+        "RESP2": 41,
+        "RESP3": 42,
+        "RESP4": 43,
+        "CERTA": 3,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual o resultado de 8 x 9?",
+        "RESP1": 72,
+        "RESP2": 71,
+        "RESP3": 73,
+        "RESP4": 74,
+        "CERTA": 1,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual o resultado de 3 x 5?",
+        "RESP1": 16,
+        "RESP2": 17,
+        "RESP3": 15,
+        "RESP4": 18,
+        "CERTA": 3,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual o resultado de 4 x 4?",
+        "RESP1": 16,
+        "RESP2": 15,
+        "RESP3": 14,
+        "RESP4": 17,
+        "CERTA": 1,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual o resultado de 7 x 7?",
+        "RESP1": 48,
+        "RESP2": 49,
+        "RESP3": 50,
+        "RESP4": 47,
+        "CERTA": 2,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual o resultado de 9 x 1?",
+        "RESP1": 8,
+        "RESP2": 9,
+        "RESP3": 10,
+        "RESP4": 11,
+        "CERTA": 2,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual o resultado de 6 x 3?",
+        "RESP1": 18,
+        "RESP2": 19,
+        "RESP3": 17,
+        "RESP4": 20,
+        "CERTA": 1,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual o resultado de 5 x 2?",
+        "RESP1": 11,
+        "RESP2": 10,
+        "RESP3": 12,
+        "RESP4": 13,
+        "CERTA": 2,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual o resultado de 9 x 3?",
+        "RESP1": 26,
+        "RESP2": 28,
+        "RESP3": 27,
+        "RESP4": 29,
+        "CERTA": 3,
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "M"
+    },
+
     {
         "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 54321 - 12345?",
@@ -966,14 +1099,15 @@
     },    
     {
         "NUMERO": 99999,
-        "PERGUNTA": "Qual é o resultado da multiplicação 12 * 34?",
+        "PERGUNTA": "Qual é o resultado da multiplicação 12 B 34?",
         "RESP1": "408",
         "RESP2": "409",
         "RESP3": "410",
         "RESP4": "-408",
         "CERTA": "1",
-        "NIVEL": "A",
-        "JA_FOI": "N"
+        "NIVEL": "B",
+        "JA_FOI": "N",
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1027,13 +1161,13 @@
     
     {
         "NUMERO": 99999,
-        "PERGUNTA": "Qual é o resultado da multiplicação 56 * 78?",
+        "PERGUNTA": "Qual é o resultado da multiplicação 56 B 78?",
         "RESP1": "4368",
         "RESP2": "4369",
         "RESP3": "4370",
         "RESP4": "-4368",
         "CERTA": "1",
-        "NIVEL": "A",
+        "NIVEL": "B",
         "JA_FOI": "N",
         "MATERIA": "M"
     },
@@ -1045,7 +1179,7 @@
         "RESP3": "1892",
         "RESP4": "-1890",
         "CERTA": "1",
-        "NIVEL": "A",
+        "NIVEL": "B",
         "JA_FOI": "N",
         "MATERIA": "M"
     },
@@ -1057,7 +1191,7 @@
         "RESP3": "3014",
         "RESP4": "-3015",
         "CERTA": "1",
-        "NIVEL": "A",
+        "NIVEL": "B",
         "JA_FOI": "N",
         "MATERIA": "M"
     },
@@ -1069,7 +1203,7 @@
         "RESP3": "2850",
         "RESP4": "-2848",
         "CERTA": "1",
-        "NIVEL": "A",
+        "NIVEL": "B",
         "JA_FOI": "N",
         "MATERIA": "M"
     },
@@ -1081,7 +1215,7 @@
         "RESP3": "56147",
         "RESP4": "-56148",
         "CERTA": "2",
-        "NIVEL": "B",
+        "NIVEL": "C",
         "JA_FOI": "N",
         "MATERIA": "M"
     },
@@ -1093,7 +1227,7 @@
         "RESP3": "253268",
         "RESP4": "-253269",
         "CERTA": "2",
-        "NIVEL": "B",
+        "NIVEL": "C",
         "JA_FOI": "N",
         "MATERIA": "M"
     },
@@ -1105,7 +1239,7 @@
         "RESP3": "132677",
         "RESP4": "-132678",
         "CERTA": "1",
-        "NIVEL": "B",
+        "NIVEL": "C",
         "JA_FOI": "N",
         "MATERIA": "M"
     },
@@ -1117,7 +1251,7 @@
         "RESP3": "285950",
         "RESP4": "-285951",
         "CERTA": "2",
-        "NIVEL": "B",
+        "NIVEL": "C",
         "JA_FOI": "N",
         "MATERIA": "M"
     },
@@ -1141,7 +1275,7 @@
         "RESP3": "48",
         "RESP4": "36",
         "CERTA": "2",
-        "NIVEL": "B",
+        "NIVEL": "A",
         "JA_FOI": "N",
         "MATERIA": "S"
     },
@@ -1153,7 +1287,7 @@
         "RESP3": 64,
         "RESP4": 80,
         "CERTA": "1",
-        "NIVEL": "B",
+        "NIVEL": "A",
         "JA_FOI": "N",
         "MATERIA": "S"
     },
