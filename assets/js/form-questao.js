@@ -172,3 +172,11 @@ function enviarpontuacao() {
             console.error('Erro ao enviar os dados para o servidor:', error);
         });
 }
+
+function atualizarDadosPartida() {
+
+    spanNivel.innerText = `Nível: ${nivel}`;
+    spanPontuacao.innerText = `Pontos: ${pontuacao}`;
+    spanPulos.innerText = `Pulos: ${qtdePulos}`;
+    spanErros.innerText = `Erros: ${qtdeErros}`;
+}
