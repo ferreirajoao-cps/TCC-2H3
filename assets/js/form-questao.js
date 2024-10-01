@@ -180,3 +180,43 @@ function atualizarDadosPartida() {
     spanPulos.innerText = `Pulos: ${qtdePulos}`;
     spanErros.innerText = `Erros: ${qtdeErros}`;
 }
+function sortear() {
+    // Verifica se ainda existem perguntas disponíveis
+    if (perguntas.length === 0) {
+        Swal.fire({
+            position: "center",
+            title: 'Fim de Jogo!',
+            text: 'Não há mais perguntas disponíveis.',
+            icon: 'info',
+            confirmButtonText: 'Voltar ao início'
+        }).then(() => {
+            window.location.href = "../../index.html";
+        });
+        return;
+    }
+
+    // Filtrar perguntas pela matéria selecionada
+    perguntasDisponiveis = perguntas.filter(pergunta => pergunta.MATERIA === materiaSelecionada);
+
+    // Verifica se há perguntas disponíveis para a matéria
+    if (perguntasDisponiveis.length === 0) {
+        Swal.fire({
+            position: "center",
+            title: 'Erro!',
+            text: 'Não há perguntas disponíveis para esta matéria.',
+            icon: 'error',
+            confirmButtonText: 'OK'
+        });
+        return;
+    }
+
+    // Sortear um índice aleatório
+    index = Math.floor(Math.random() * perguntasDisponiveis.length);
+
+    // Exibir a pergunta e as respostas
+    h3Pergunta.innerText = perguntasDisponiveis[index].PERGUNTA;
+    labelResposta01.innerText = perguntasDisponiveis[index].RESP1;
+    labelResposta02.innerText = perguntasDisponiveis[index].RESP2;
+    labelResposta03.innerText = perguntasDisponiveis[index].RESP3;
+    labelResposta04.innerText = perguntasDisponiveis[index].RESP4;
+}
