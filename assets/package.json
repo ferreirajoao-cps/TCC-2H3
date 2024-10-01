@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "sweetalert2": "^11.14.1"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "sass-loader": "^16.0.2"
+  }
+}

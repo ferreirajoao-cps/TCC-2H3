@@ -15,6 +15,10 @@ fetch('../dados/perguntas.json')
     })
     .catch(error => console.error('Erro ao carregar o JSON:', error));
 
+
+    import Swal from 'sweetalert2';
+    import 'sweetalert2/dist/sweetalert2.min.css';    
+
 // Variáveis
 
 
@@ -38,10 +42,10 @@ let qtdeErros = 0;
 let perguntasDisponiveis = [];
 let index;
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var respostas = document.querySelectorAll('.resp1, .resp2, .resp3, .resp4');
-    respostas.forEach(function(resposta) {
-        resposta.addEventListener('click', function() {
+    respostas.forEach(function (resposta) {
+        resposta.addEventListener('click', function () {
             var radio = this.querySelector('input[type="radio"]');
             radio.checked = true;
         });
@@ -60,31 +64,48 @@ function validarResposta() {
     console.log('Resposta Selecionada:', resp);
 
     if (resp == null) {
-        alert('Selecione uma resposta antes de confirmar!!!');
+        Swal.fire({
+            title: 'Error!',
+            text: 'Selecione uma resposta antes de confirmar!!!',
+            icon: 'error',
+            confirmButtonText: '👍'
+        })
         return; // Retorna imediatamente se nenhuma resposta foi selecionada
     }
 
     if (resp.value == perguntasDisponiveis[index].CERTA) {
-        alert('Parabéns... Você Acertou!!!');
+        Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "Parabéns você acertou!!!",
+  showConfirmButton: false,
+  timer: 1500
+});
         pontuacao++;
 
         if (pontuacao == 20) {
-            alert('Parabéns... VOCÊ GANHOU!!!');
+Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "🎉🎉Parabéns você ganhou 🎉🎉",
+  showConfirmButton: false,
+  timer: 1500
+});
             inserirNoRanking();
             enviarpontuacao();
             window.location.href = "../../index.html";
         } else {
             nivel = pontuacao <= 4 ? 'A' :
-                    pontuacao <= 9 ? 'B' :
+                pontuacao <= 9 ? 'B' :
                     pontuacao <= 14 ? 'C' :
-                    'D';
+                        'D';
         }
     } else {
-        let respostaCorreta = 
+        let respostaCorreta =
             perguntasDisponiveis[index].CERTA == 1 ? perguntasDisponiveis[index].RESP1 :
-            perguntasDisponiveis[index].CERTA == 2 ? perguntasDisponiveis[index].RESP2 :
-            perguntasDisponiveis[index].CERTA == 3 ? perguntasDisponiveis[index].RESP3 :
-            perguntasDisponiveis[index].RESP4;
+                perguntasDisponiveis[index].CERTA == 2 ? perguntasDisponiveis[index].RESP2 :
+                    perguntasDisponiveis[index].CERTA == 3 ? perguntasDisponiveis[index].RESP3 :
+                        perguntasDisponiveis[index].RESP4;
 
         alert(`Que Pena... Você Errou \nResposta Correta: ${respostaCorreta}`);
         qtdeErros++;
@@ -107,14 +128,14 @@ function pular() {
     if (qtdePulos == 0) {
         btnPular.disabled = true;
     }
-    
+
     let resp = retornarRespostaSelecionada();
     if (resp != null) {
         resp.checked = false;
     }
 
     atualizarDadosPartida();
-    sortear();    
+    sortear();
 }
 
 function atualizarDadosPartida() {
@@ -149,7 +170,7 @@ function sortear() {
     labelResposta01.innerText = perguntasDisponiveis[index].RESP1;
     labelResposta02.innerText = perguntasDisponiveis[index].RESP2;
     labelResposta03.innerText = perguntasDisponiveis[index].RESP3;
-    labelResposta04.innerText = perguntasDisponiveis[index].RESP4;    
+    labelResposta04.innerText = perguntasDisponiveis[index].RESP4;
 }
 
 function parar() {
@@ -163,7 +184,7 @@ function retornarRespostaSelecionada() {
     return resposta;
 }
 
-function enviarpontuacao(){
+function enviarpontuacao() {
     const nomeJogador = localStorage.getItem('nomeJogador'); // Substitua pelo nome do jogador
     const pontos = pontuacao; // Substitua pela pontuação do jogador
 
@@ -174,11 +195,11 @@ function enviarpontuacao(){
             'Content-Type': 'application/json'
         }
     })
-    .then(response => response.text())
-    .then(data => {
-        console.log(data); // Deve imprimir a resposta do servidor (sucesso ou erro)
-    })
-    .catch(error => {
-        console.error('Erro ao enviar os dados para o servidor:', error);
-    });
+        .then(response => response.text())
+        .then(data => {
+            console.log(data); // Deve imprimir a resposta do servidor (sucesso ou erro)
+        })
+        .catch(error => {
+            console.error('Erro ao enviar os dados para o servidor:', error);
+        });
 }
