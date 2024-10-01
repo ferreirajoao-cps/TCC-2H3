@@ -62,6 +62,7 @@ function validarResposta() {
 
     if (resp == null) {
         Swal.fire({
+            position: "center",
             title: 'Error!',
             text: 'Selecione uma resposta antes de confirmar!!!',
             icon: 'error',
@@ -72,21 +73,21 @@ function validarResposta() {
 
     if (resp.value == perguntasDisponiveis[index].CERTA) {
         Swal.fire({
-            position: "top-end",
+            position: "center",
             icon: "success",
             title: "Parabéns, você acertou!!!",
-            showConfirmButton: false,
-            timer: 1500
+            showConfirmButton: true,
+            confirmButtonText: '👍'
         });
         pontuacao++;
 
         if (pontuacao == 20) {
             Swal.fire({
-                position: "top-end",
+                position: "center",
                 icon: "success",
                 title: "🎉🎉Parabéns, você ganhou 🎉🎉",
-                showConfirmButton: false,
-                timer: 1500
+                showConfirmButton: true,
+                confirmButtonText: '👍'
             });
             inserirNoRanking();
             enviarpontuacao();
@@ -105,20 +106,22 @@ function validarResposta() {
                         perguntasDisponiveis[index].RESP4;
 
         Swal.fire({
+            position: "center",
             title: 'Que Pena...',
             text: `Você Errou! Resposta Correta: ${respostaCorreta}`,
             icon: 'error',
-            confirmButtonText: 'Entendi'
+            confirmButtonText: 'OK'
         });
 
         qtdeErros++;
 
         if (qtdeErros == 3) {
             Swal.fire({
+                position: "center",
                 title: 'Fim de Jogo!',
                 text: 'Você cometeu 3 erros.',
                 icon: 'error',
-                confirmButtonText: 'Tentar novamente'
+                confirmButtonText: 'OK'
             }).then(() => {
                 enviarpontuacao();
                 window.location.href = "../../index.html";
@@ -134,6 +137,7 @@ function validarResposta() {
 
 function parar() {
     Swal.fire({
+        position: "center",
         title: 'Você decidiu parar!',
         text: 'Que pena, você desistiu!',
         icon: 'info',
