@@ -16,9 +16,6 @@ fetch('../dados/perguntas.json')
     .catch(error => console.error('Erro ao carregar o JSON:', error));
 
 
-    import Swal from 'sweetalert2';
-    import 'sweetalert2/dist/sweetalert2.min.css';    
-
 // Variáveis
 
 
@@ -69,28 +66,28 @@ function validarResposta() {
             text: 'Selecione uma resposta antes de confirmar!!!',
             icon: 'error',
             confirmButtonText: '👍'
-        })
+        });
         return; // Retorna imediatamente se nenhuma resposta foi selecionada
     }
 
     if (resp.value == perguntasDisponiveis[index].CERTA) {
         Swal.fire({
-  position: "top-end",
-  icon: "success",
-  title: "Parabéns você acertou!!!",
-  showConfirmButton: false,
-  timer: 1500
-});
+            position: "top-end",
+            icon: "success",
+            title: "Parabéns, você acertou!!!",
+            showConfirmButton: false,
+            timer: 1500
+        });
         pontuacao++;
 
         if (pontuacao == 20) {
-Swal.fire({
-  position: "top-end",
-  icon: "success",
-  title: "🎉🎉Parabéns você ganhou 🎉🎉",
-  showConfirmButton: false,
-  timer: 1500
-});
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "🎉🎉Parabéns, você ganhou 🎉🎉",
+                showConfirmButton: false,
+                timer: 1500
+            });
             inserirNoRanking();
             enviarpontuacao();
             window.location.href = "../../index.html";
@@ -107,13 +104,25 @@ Swal.fire({
                     perguntasDisponiveis[index].CERTA == 3 ? perguntasDisponiveis[index].RESP3 :
                         perguntasDisponiveis[index].RESP4;
 
-        alert(`Que Pena... Você Errou \nResposta Correta: ${respostaCorreta}`);
+        Swal.fire({
+            title: 'Que Pena...',
+            text: `Você Errou! Resposta Correta: ${respostaCorreta}`,
+            icon: 'error',
+            confirmButtonText: 'Entendi'
+        });
+
         qtdeErros++;
 
         if (qtdeErros == 3) {
-            alert('Fim de Jogo!!!');
-            enviarpontuacao();
-            window.location.href = "../../index.html";
+            Swal.fire({
+                title: 'Fim de Jogo!',
+                text: 'Você cometeu 3 erros.',
+                icon: 'error',
+                confirmButtonText: 'Tentar novamente'
+            }).then(() => {
+                enviarpontuacao();
+                window.location.href = "../../index.html";
+            });
         }
     }
 
@@ -123,60 +132,16 @@ Swal.fire({
     sortear();
 }
 
-function pular() {
-    qtdePulos--;
-    if (qtdePulos == 0) {
-        btnPular.disabled = true;
-    }
-
-    let resp = retornarRespostaSelecionada();
-    if (resp != null) {
-        resp.checked = false;
-    }
-
-    atualizarDadosPartida();
-    sortear();
-}
-
-function atualizarDadosPartida() {
-
-    spanNivel.innerText = `Nível: ${nivel}`;
-    spanPontuacao.innerText = `Pontos: ${pontuacao}`;
-    spanPulos.innerText = `Pulos: ${qtdePulos}`;
-    spanErros.innerText = `Erros: ${qtdeErros}`;
-}
-
-
-
-function sortear() {
-
-
-    perguntasDisponiveis = perguntas.filter(pergunta => {
-        return pergunta.MATERIA == materiaSelecionada &&
-            pergunta.NIVEL == nivel &&
-            pergunta.JA_FOI == 'N';
-    });
-
-    index = Math.floor(Math.random() * perguntasDisponiveis.length);
-
-    for (let idx = 0; idx < perguntas.length; idx++) {
-        if (perguntas[idx].PERGUNTA == perguntasDisponiveis[index].PERGUNTA) {
-            perguntas[idx].JA_FOI = 'S';
-            break;
-        }
-    }
-
-    h3Pergunta.innerText = perguntasDisponiveis[index].PERGUNTA;
-    labelResposta01.innerText = perguntasDisponiveis[index].RESP1;
-    labelResposta02.innerText = perguntasDisponiveis[index].RESP2;
-    labelResposta03.innerText = perguntasDisponiveis[index].RESP3;
-    labelResposta04.innerText = perguntasDisponiveis[index].RESP4;
-}
-
 function parar() {
-    alert('Que pena, você desistiu!!!');
-    enviarpontuacao();
-    window.location.href = "../../index.html";
+    Swal.fire({
+        title: 'Você decidiu parar!',
+        text: 'Que pena, você desistiu!',
+        icon: 'info',
+        confirmButtonText: 'Voltar ao início'
+    }).then(() => {
+        enviarpontuacao();
+        window.location.href = "../../index.html";
+    });
 }
 
 function retornarRespostaSelecionada() {
