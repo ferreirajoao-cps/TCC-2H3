@@ -172,7 +172,6 @@ function enviarpontuacao() {
             console.error('Erro ao enviar os dados para o servidor:', error);
         });
 }
-
 function atualizarDadosPartida() {
 
     spanNivel.innerText = `Nível: ${nivel}`;
@@ -180,43 +179,41 @@ function atualizarDadosPartida() {
     spanPulos.innerText = `Pulos: ${qtdePulos}`;
     spanErros.innerText = `Erros: ${qtdeErros}`;
 }
+function pular() {
+    qtdePulos--;
+    if (qtdePulos == 0) {
+        btnPular.disabled = true;
+    }
+    
+    let resp = retornarRespostaSelecionada();
+    if (resp != null) {
+        resp.checked = false;
+    }
+
+    atualizarDadosPartida();
+    sortear();    
+}
 function sortear() {
-    // Verifica se ainda existem perguntas disponíveis
-    if (perguntas.length === 0) {
-        Swal.fire({
-            position: "center",
-            title: 'Fim de Jogo!',
-            text: 'Não há mais perguntas disponíveis.',
-            icon: 'info',
-            confirmButtonText: 'Voltar ao início'
-        }).then(() => {
-            window.location.href = "../../index.html";
-        });
-        return;
-    }
 
-    // Filtrar perguntas pela matéria selecionada
-    perguntasDisponiveis = perguntas.filter(pergunta => pergunta.MATERIA === materiaSelecionada);
 
-    // Verifica se há perguntas disponíveis para a matéria
-    if (perguntasDisponiveis.length === 0) {
-        Swal.fire({
-            position: "center",
-            title: 'Erro!',
-            text: 'Não há perguntas disponíveis para esta matéria.',
-            icon: 'error',
-            confirmButtonText: 'OK'
-        });
-        return;
-    }
+    perguntasDisponiveis = perguntas.filter(pergunta => {
+        return pergunta.MATERIA == materiaSelecionada &&
+            pergunta.NIVEL == nivel &&
+            pergunta.JA_FOI == 'N';
+    });
 
-    // Sortear um índice aleatório
     index = Math.floor(Math.random() * perguntasDisponiveis.length);
 
-    // Exibir a pergunta e as respostas
+    for (let idx = 0; idx < perguntas.length; idx++) {
+        if (perguntas[idx].PERGUNTA == perguntasDisponiveis[index].PERGUNTA) {
+            perguntas[idx].JA_FOI = 'S';
+            break;
+        }
+    }
+
     h3Pergunta.innerText = perguntasDisponiveis[index].PERGUNTA;
     labelResposta01.innerText = perguntasDisponiveis[index].RESP1;
     labelResposta02.innerText = perguntasDisponiveis[index].RESP2;
     labelResposta03.innerText = perguntasDisponiveis[index].RESP3;
-    labelResposta04.innerText = perguntasDisponiveis[index].RESP4;
+    labelResposta04.innerText = perguntasDisponiveis[index].RESP4;    
 }
