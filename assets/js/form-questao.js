@@ -15,6 +15,13 @@ fetch('../dados/perguntas.json')
     })
     .catch(error => console.error('Erro ao carregar o JSON:', error));
 
+function atualizarDadosPartida() {
+
+    spanNivel.innerText = `Nível: ${nivel}`;
+    spanPontuacao.innerText = `Pontos: ${pontuacao}`;
+    spanPulos.innerText = `Pulos: ${qtdePulos}`;
+    spanErros.innerText = `Erros: ${qtdeErros}`;
+}
 
 // Variáveis
 
@@ -172,26 +179,20 @@ function enviarpontuacao() {
             console.error('Erro ao enviar os dados para o servidor:', error);
         });
 }
-function atualizarDadosPartida() {
 
-    spanNivel.innerText = `Nível: ${nivel}`;
-    spanPontuacao.innerText = `Pontos: ${pontuacao}`;
-    spanPulos.innerText = `Pulos: ${qtdePulos}`;
-    spanErros.innerText = `Erros: ${qtdeErros}`;
-}
 function pular() {
     qtdePulos--;
     if (qtdePulos == 0) {
         btnPular.disabled = true;
     }
-    
+
     let resp = retornarRespostaSelecionada();
     if (resp != null) {
         resp.checked = false;
     }
 
     atualizarDadosPartida();
-    sortear();    
+    sortear();
 }
 function sortear() {
 
@@ -215,5 +216,5 @@ function sortear() {
     labelResposta01.innerText = perguntasDisponiveis[index].RESP1;
     labelResposta02.innerText = perguntasDisponiveis[index].RESP2;
     labelResposta03.innerText = perguntasDisponiveis[index].RESP3;
-    labelResposta04.innerText = perguntasDisponiveis[index].RESP4;    
+    labelResposta04.innerText = perguntasDisponiveis[index].RESP4;
 }

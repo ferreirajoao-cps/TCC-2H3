@@ -14,6 +14,13 @@ btnIniciarJogo.addEventListener('click', () => {
     window.location.href = "./assets/html/materias.html";
     // Aqui você pode iniciar o jogo ou redirecionar para a próxima tela do jogo.
   } else {
-    alert('Por favor, insira seu nome antes de iniciar o jogo.');
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "Por favor, insira seu nome antes de iniciar o jogo.",
+      showConfirmButton: true,
+      timer: 3500,
+      confirmButtonText: '👍'
+  });
   }
 });
