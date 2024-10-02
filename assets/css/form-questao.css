@@ -1,0 +1,168 @@
+
+* {
+    cursor: auto;
+}
+body {
+    background: #ffffff;
+    /* background: -webkit-linear-gradient(to right, #ff7300d0, #ff7300d0); */
+    background: linear-gradient(to right, #ff7300d0, #ff7300d0);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;        
+}
+
+#h3Pergunta,
+.botoes,
+.text-t {
+    color: black;
+    font-size: 1.125rem;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border: 0.125rem solid #000;
+    padding: 0.625rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.9375rem;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.resp1,
+.resp2,
+.resp3,
+.resp4 {
+    font-size: 1.25rem;
+    width: 100%;
+    margin-top: 0.625rem;
+    padding: 0.9375rem;
+    border-radius: 0.9375rem;
+    border: 0.125rem solid #000;
+    font-weight: bold;
+}
+
+.resp1,
+.resp3 {
+    background-color: rgba(0, 128, 167, 0.7);
+}
+
+.resp2,
+.resp4 {
+    background-color: rgba(141, 243, 8, 0.7);
+}
+
+.respostas {
+    background-color: rgb(255, 255, 255);
+    border: 0.1125rem solid #000;
+    border-radius: 0.9375rem;
+    padding: 0.9375rem;
+}
+
+#h3Pergunta {
+    padding: 1.25rem;
+    margin-top: 0.3125rem;
+    font-size: 2.1667rem;
+}
+
+.lnivel,
+.lpontos,
+.lpulos,
+.lerros,
+#btnConfirmar,
+#btnPular,
+#btnParar {
+    font-size: 1.25rem;
+    padding: 0.15625rem;
+    border-radius: 0.625rem;
+    border: 0.125rem solid #000;
+}
+
+.lnivel {
+    background-color: #FFCD56;
+}
+
+.lpontos,
+#btnConfirmar {
+    background-color: greenyellow;
+}
+
+.lpulos,
+#btnPular {
+    background-color: #00ffff;
+}
+
+.lerros,
+#btnParar {
+    background-color: #ff0000dc;
+}
+
+#btnConfirmar,
+#btnPular,
+#btnParar {
+    cursor: auto;
+    color: black;
+    padding: 0.3125rem;
+    font-weight: bold;
+    transition: box-shadow 0.3s; /* Adiciona transição suave na sombra */
+}
+
+.btnicon {
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: 0.3125rem;
+}
+
+#btnConfirmar:hover,
+#btnPular:hover,
+#btnParar:hover {
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+    cursor: auto;
+}
+
+.lnivel,
+.lpontos,
+.lpulos,
+.lerros {
+    font-size: 1.375rem;
+}
+#cronometro{
+    color: black;
+    font-size: 1.125rem;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border: 0.125rem solid #000;
+    padding: 0.4rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.9375rem;
+    font-weight: bold;
+    background-color: rgba(241, 241, 241, 0.5);
+    text-align: center;
+}
+#btnPular,
+#btnParar {
+    margin-left: 0.625rem;
+}
+@media screen and (max-width: 768px){
+    #btnParar{
+        margin-top: 10px;
+    }
+}
+.lnivel,
+.lpontos,
+.lpulos,
+.lerros {
+    font-size: 1.375rem;
+    text-wrap: nowrap;
+}
+* {
+    cursor: auto;
+}

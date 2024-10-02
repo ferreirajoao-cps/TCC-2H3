@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/materias.css">
+        <link rel="shortcut icon" href="../images/geral/logo.png" type="image/x-icon">
+        <title>MateMax</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- mudança no label  -->
+            <div class="form-label-container"><h1>SELECIONE A OPERAÇÃO:</h1></div>    
+            <!-- <div class="form-label-container" style="width: 700px;"><h1>SELECIONE A OPERAÇÃO:</h1></div>              -->
+            <div class="contp">
+                <div class="form-check-m" onclick="selecionarMateria('A')">
+                    <input class="form-check-input" type="radio" name="materia" id="materiaA" value="A" checked>
+                    <label class="form-check-label" for="materiaA">Adição</label>
+                    <img class="iconem" src="../images/materias/matematica.png" alt="">
+                </div>
+                <div class="form-check-m" onclick="selecionarMateria('S')">
+                    <input class="form-check-input" type="radio" name="materia" id="materiaS" value="S">
+                    <label class="form-check-label" for="materiaS">Subtração</label>
+                    <img class="iconem" src="../images/materias/matematica.png" alt="">
+                </div>
+                <div class="form-check-m" onclick="selecionarMateria('M')">
+                    <input class="form-check-input" type="radio" name="materia" id="materiaM" value="M">
+                    <label class="form-check-label" for="materiaM">Multiplicacao</label>
+                    <img class="iconem" src="../images/materias/matematica.png" alt="">
+                </div>
+                <div class="form-check-m" onclick="selecionarMateria('D')">
+                    <input class="form-check-input" type="radio" name="materia" id="materiaD" value="D">
+                    <label class="form-check-label" for="materiaD">Divisão</label>
+                    <img class="iconem" src="../images/materias/matematica.png" alt="">
+                </div>
+            </div>
+            
+                        
+            <div class="text-center">
+                <a class="btn" href="./form-questao.html" onclick="jogar()">
+                    <img class="playicon"src="../images/geral/play.png" alt="">
+                    Jogar
+                </a>
+            </div>
+            
+        
+        <script src="../js/materias.js"></script>
+    </body>
+</html>
