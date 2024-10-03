@@ -123,6 +123,12 @@ function validarResposta() {
         qtdeErros++;
 
         if (qtdeErros == 3) {
+            const nomeJogador = localStorage.getItem('nomeJogador');
+    const materia = sessionStorage.getItem('materia-selecionada');
+    const pontos = pontuacao; // Certifique-se de que esta variável está definida
+            console.log('Nome do Jogador:', nomeJogador);
+    console.log('Pontuação:', pontos);
+    console.log('Matéria:', materia);
             Swal.fire({
                 position: "center",
                 title: 'Fim de Jogo!',
@@ -130,7 +136,8 @@ function validarResposta() {
                 icon: 'error',
                 confirmButtonText: 'OK'
             }).then(() => {
-                enviarpontuacao();
+                
+                enviarpontuacao(); // Adicione aqui
                 window.location.href = "../../index.html";
             });
         }
@@ -143,6 +150,12 @@ function validarResposta() {
 }
 
 function parar() {
+    const nomeJogador = localStorage.getItem('nomeJogador');
+    const materia = sessionStorage.getItem('materia-selecionada');
+    const pontos = pontuacao; // Certifique-se de que esta variável está definida
+    console.log('Nome do Jogador:', nomeJogador);
+    console.log('Pontuação:', pontos);
+    console.log('Matéria:', materia);
     Swal.fire({
         position: "center",
         title: 'Você decidiu parar!',
@@ -150,7 +163,7 @@ function parar() {
         icon: 'info',
         confirmButtonText: 'Voltar ao início'
     }).then(() => {
-        enviarpontuacao();
+        enviarpontuacao(); // Envia a pontuação
         window.location.href = "../../index.html";
     });
 }
@@ -160,25 +173,38 @@ function retornarRespostaSelecionada() {
     return resposta;
 }
 
+
 function enviarpontuacao() {
-    const nomeJogador = localStorage.getItem('nomeJogador'); // Substitua pelo nome do jogador
-    const pontos = pontuacao; // Substitua pela pontuação do jogador
+    const nomeJogador = localStorage.getItem('nomeJogador');
+    const materia = sessionStorage.getItem('materia-selecionada');
+    const pontos = pontuacao; // Certifique-se de que esta variável está definida
+
+    console.log('Nome do Jogador:', nomeJogador);
+    console.log('Pontuação:', pontos);
+    console.log('Matéria:', materia);
+
 
     fetch('../php/inserir_pontuacao.php', {
         method: 'POST',
-        body: JSON.stringify({ nomeJogador, pontos }), // Alterado de 'pontuacao' para 'pontos'
+        body: JSON.stringify({ nomeJogador, pontos, materia }),
         headers: {
             'Content-Type': 'application/json'
         }
     })
-        .then(response => response.text())
-        .then(data => {
-            console.log(data); // Deve imprimir a resposta do servidor (sucesso ou erro)
-        })
-        .catch(error => {
-            console.error('Erro ao enviar os dados para o servidor:', error);
-        });
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Erro na rede: ${response.status}`);
+        }
+        return response.text();
+    })
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Erro ao enviar os dados para o servidor:', error);
+    });
 }
+
 
 function pular() {
     qtdePulos--;

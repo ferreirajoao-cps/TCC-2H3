@@ -15,10 +15,10 @@
             <div class="form-group">
                 <label for="materiaSelect">Matéria:</label>
                 <select class="form-control" id="materiaSelect" name="materia" onchange="this.form.submit()">
-                    <option value="A">Adição</option>
-                    <option value="S">Subtração</option>
-                    <option value="M">Multiplicação</option>
-                    <option value="D">Divisão</option>
+                    <option value="A" <?= isset($_GET['materia']) && $_GET['materia'] === 'A' ? 'selected' : '' ?>>Adição</option>
+                    <option value="S" <?= isset($_GET['materia']) && $_GET['materia'] === 'S' ? 'selected' : '' ?>>Subtração</option>
+                    <option value="M" <?= isset($_GET['materia']) && $_GET['materia'] === 'M' ? 'selected' : '' ?>>Multiplicação</option>
+                    <option value="D" <?= isset($_GET['materia']) && $_GET['materia'] === 'D' ? 'selected' : '' ?>>Divisão</option>
                 </select>
             </div>
         </form>
@@ -41,17 +41,19 @@
         // Capturar o filtro da matéria
         $materia = isset($_GET['materia']) ? $_GET['materia'] : 'A'; // Padrão é 'A'
 
-        // Consulta SQL para obter o ranking filtrado por matéria
-        $sql = "
-        SELECT j.nome, p.pontuacao 
-        FROM jogador j
-        JOIN pontuacao p ON j.id_J = p.id_J
-        JOIN operacao o ON p.id_op = o.id_op
-        WHERE o.materia = '$materia'
-        ORDER BY p.pontuacao DESC
-        LIMIT 10";
-
-        $result = $conn->query($sql);
+        // Preparar a consulta SQL para obter o ranking filtrado por matéria
+        $stmt = $conn->prepare("
+            SELECT j.nome, p.pontuacao 
+            FROM jogador j
+            JOIN pontuacao p ON j.id_J = p.id_J
+            JOIN operacao o ON p.id_op = o.id_op
+            WHERE o.materia = ?
+            ORDER BY p.pontuacao DESC
+            LIMIT 10
+        ");
+        $stmt->bind_param("s", $materia); // "s" significa string
+        $stmt->execute();
+        $result = $stmt->get_result();
 
         // Exibir o ranking
         if ($result->num_rows > 0) {
@@ -69,6 +71,7 @@
         }
 
         // Feche a conexão com o banco de dados
+        $stmt->close();
         $conn->close();
         ?>
     </div>
