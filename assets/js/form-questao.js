@@ -72,6 +72,8 @@ function validarResposta() {
     }
 
     if (resp.value == perguntasDisponiveis[index].CERTA) {
+        const audio = document.getElementById('audioSucesso');
+        audio.play();
         Swal.fire({
             position: "center",
             icon: "success",
@@ -79,6 +81,7 @@ function validarResposta() {
             showConfirmButton: true,
             confirmButtonText: '👍'
         });
+        
         pontuacao++;
 
         if (pontuacao == 20) {
@@ -105,6 +108,8 @@ function validarResposta() {
                     perguntasDisponiveis[index].CERTA == 3 ? perguntasDisponiveis[index].RESP3 :
                         perguntasDisponiveis[index].RESP4;
 
+                        const audio = document.getElementById('audioFalha');
+        audio.play();
         Swal.fire({
             position: "center",
             title: 'Que Pena...',
@@ -136,6 +141,8 @@ function validarResposta() {
 }
 
 function parar() {
+    const audio = document.getElementById('audioParar');
+        audio.play();
     Swal.fire({
         position: "center",
         title: 'Você decidiu parar!',
@@ -180,6 +187,8 @@ function atualizarDadosPartida() {
     spanErros.innerText = `Erros: ${qtdeErros}`;
 }
 function pular() {
+    const audio = document.getElementById('audioPular');
+        audio.play();
     qtdePulos--;
     if (qtdePulos == 0) {
         btnPular.disabled = true;
