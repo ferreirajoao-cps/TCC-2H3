@@ -66,7 +66,8 @@ function validarResposta() {
             title: 'Error!',
             text: 'Selecione uma resposta antes de confirmar!!!',
             icon: 'error',
-            confirmButtonText: '👍'
+            confirmButtonText: '👍',
+            timer: 5000
         });
         return; // Retorna imediatamente se nenhuma resposta foi selecionada
     }
@@ -79,7 +80,8 @@ function validarResposta() {
             icon: "success",
             title: "Parabéns, você acertou!!!",
             showConfirmButton: true,
-            confirmButtonText: '👍'
+            confirmButtonText: '👍',
+            timer: 5000
         });
         
         pontuacao++;
@@ -126,7 +128,9 @@ function validarResposta() {
                 title: 'Fim de Jogo!',
                 text: 'Você cometeu 3 erros.',
                 icon: 'error',
-                confirmButtonText: 'OK'
+                confirmButtonText: 'OK',
+                timer: 5000,
+
             }).then(() => {
                 enviarpontuacao();
                 window.location.href = "../../index.html";
@@ -161,24 +165,36 @@ function retornarRespostaSelecionada() {
 }
 
 function enviarpontuacao() {
-    const nomeJogador = localStorage.getItem('nomeJogador'); // Substitua pelo nome do jogador
-    const pontos = pontuacao; // Substitua pela pontuação do jogador
+    const nomeJogador = localStorage.getItem('nomeJogador');
+    const materia = sessionStorage.getItem('materia-selecionada');
+    const pontos = pontuacao; // Certifique-se de que esta variável está definida
+
+    console.log('Nome do Jogador:', nomeJogador);
+    console.log('Pontuação:', pontos);
+    console.log('Matéria:', materia);
+
 
     fetch('../php/inserir_pontuacao.php', {
         method: 'POST',
-        body: JSON.stringify({ nomeJogador, pontos }), // Alterado de 'pontuacao' para 'pontos'
+        body: JSON.stringify({ nomeJogador, pontos, materia }),
         headers: {
             'Content-Type': 'application/json'
         }
     })
-        .then(response => response.text())
-        .then(data => {
-            console.log(data); // Deve imprimir a resposta do servidor (sucesso ou erro)
-        })
-        .catch(error => {
-            console.error('Erro ao enviar os dados para o servidor:', error);
-        });
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Erro na rede: ${response.status}`);
+        }
+        return response.text();
+    })
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Erro ao enviar os dados para o servidor:', error);
+    });
 }
+
 function atualizarDadosPartida() {
 
     spanNivel.innerText = `Nível: ${nivel}`;
