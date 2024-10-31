@@ -25,9 +25,13 @@
 
         <?php
         // Conexão com o banco de dados
-        $servername = "sql204.infinityfree.com";
-        $username = "if0_37323049";
-        $password = "SC9Ln7M36S";
+        // $servername = "sql204.infinityfree.com";
+        // $username = "if0_37323049";
+        // $password = "SC9Ln7M36S";
+        // $dbname = "if0_37323049_matemax";
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
         $dbname = "if0_37323049_matemax";
 
         // Crie uma conexão

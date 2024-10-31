@@ -83,7 +83,7 @@ function validarResposta() {
             confirmButtonText: '👍',
             timer: 5000
         });
-        
+
         pontuacao++;
 
         if (pontuacao == 20) {
@@ -110,7 +110,7 @@ function validarResposta() {
                     perguntasDisponiveis[index].CERTA == 3 ? perguntasDisponiveis[index].RESP3 :
                         perguntasDisponiveis[index].RESP4;
 
-                        const audio = document.getElementById('audioFalha');
+        const audio = document.getElementById('audioFalha');
         audio.play();
         Swal.fire({
             position: "center",
@@ -132,8 +132,7 @@ function validarResposta() {
                 timer: 5000,
 
             }).then(() => {
-                enviarpontuacao();
-                window.location.href = "../../index.html";
+                enviarpontuacao().then(() => window.location.href = "../../index.html");
             });
         }
     }
@@ -146,7 +145,7 @@ function validarResposta() {
 
 function parar() {
     const audio = document.getElementById('audioParar');
-        audio.play();
+    audio.play();
     Swal.fire({
         position: "center",
         title: 'Você decidiu parar!',
@@ -154,8 +153,7 @@ function parar() {
         icon: 'info',
         confirmButtonText: 'Voltar ao início'
     }).then(() => {
-        enviarpontuacao();
-        window.location.href = "../../index.html";
+        enviarpontuacao().then(() => window.location.href = "../../index.html");
     });
 }
 
@@ -165,33 +163,37 @@ function retornarRespostaSelecionada() {
 }
 
 function enviarpontuacao() {
-    const nomeJogador = localStorage.getItem('nomeJogador');
-    const materia = sessionStorage.getItem('materia-selecionada');
-    const pontos = pontuacao; // Certifique-se de que esta variável está definida
+    return new Promise((resolve, reject) => {
+        const nomeJogador = localStorage.getItem('nomeJogador');
+        const materia = sessionStorage.getItem('materia-selecionada');
+        const pontos = pontuacao; // Certifique-se de que esta variável está definida
 
-    console.log('Nome do Jogador:', nomeJogador);
-    console.log('Pontuação:', pontos);
-    console.log('Matéria:', materia);
+        console.log('Nome do Jogador:', nomeJogador);
+        console.log('Pontuação:', pontos);
+        console.log('Matéria:', materia);
 
 
-    fetch('../php/inserir_pontuacao.php', {
-        method: 'POST',
-        body: JSON.stringify({ nomeJogador, pontos, materia }),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`Erro na rede: ${response.status}`);
-        }
-        return response.text();
-    })
-    .then(data => {
-        console.log(data);
-    })
-    .catch(error => {
-        console.error('Erro ao enviar os dados para o servidor:', error);
+        fetch('../php/inserir_pontuacao.php', {
+            method: 'POST',
+            body: JSON.stringify({ nomeJogador, pontos, materia }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Erro na rede: ${response.status}`);
+                }
+                return response.text();
+            })
+            .then(data => {
+                console.log(data);
+                alert(data);
+                resolve();
+            })
+            .catch(error => {
+                reject(`Erro ao enviar os dados para o servidor: ${error}`);
+            });
     });
 }
 
@@ -204,19 +206,19 @@ function atualizarDadosPartida() {
 }
 function pular() {
     const audio = document.getElementById('audioPular');
-        audio.play();
+    audio.play();
     qtdePulos--;
     if (qtdePulos == 0) {
         btnPular.disabled = true;
     }
-    
+
     let resp = retornarRespostaSelecionada();
     if (resp != null) {
         resp.checked = false;
     }
 
     atualizarDadosPartida();
-    sortear();    
+    sortear();
 }
 function sortear() {
 
@@ -240,5 +242,5 @@ function sortear() {
     labelResposta01.innerText = perguntasDisponiveis[index].RESP1;
     labelResposta02.innerText = perguntasDisponiveis[index].RESP2;
     labelResposta03.innerText = perguntasDisponiveis[index].RESP3;
-    labelResposta04.innerText = perguntasDisponiveis[index].RESP4;    
+    labelResposta04.innerText = perguntasDisponiveis[index].RESP4;
 }
