@@ -1,114 +1,162 @@
-
+/* Reset e ajustes gerais */
 * {
+    box-sizing: border-box;
     cursor: auto;
-}
-body {
-    background: #ffffff;
-    /* background: -webkit-linear-gradient(to right, #ff7300d0, #ff7300d0); */
-    background: linear-gradient(to right, #ff7300d0, #ff7300d0);
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    background: linear-gradient(to right, #ff7300d0, #ff7300d0);
+    font-family: Arial, sans-serif;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container central */
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;        
-}
-
-#h3Pergunta,
-.botoes,
-.text-t {
-    color: black;
-    font-size: 1.125rem;
-    display: inline;
-    justify-content: center;
     align-items: center;
-    border: 0.125rem solid #000;
-    padding: 0.625rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    border-radius: 0.9375rem;
-    font-weight: bold;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 1rem;
+    /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); */
 }
 
+/* Estilo do título */
+#h3Pergunta {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+/* Texto e respostas */
+.text-t,
+.respostas {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s;
+    /* border: 2px solid #000; Borda adicionada */
+}
+
+/* Estilo das respostas */
 .resp1,
 .resp2,
 .resp3,
 .resp4 {
-    font-size: 1.25rem;
-    width: 100%;
-    margin-top: 0.625rem;
-    padding: 0.9375rem;
-    border-radius: 0.9375rem;
-    border: 0.125rem solid #000;
+    font-size: 1.8rem;
     font-weight: bold;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border: 2px solid #000; /* Borda adicionada */
 }
 
-.resp1,
+/* Cores de fundo das respostas */
+.resp1 {
+    background-color: rgba(0, 128, 167, 0.7);
+}
+
+.resp2 {
+    background-color: rgba(141, 243, 8, 0.7);
+}
+
 .resp3 {
     background-color: rgba(0, 128, 167, 0.7);
 }
 
-.resp2,
 .resp4 {
     background-color: rgba(141, 243, 8, 0.7);
 }
 
-.respostas {
-    background-color: rgb(255, 255, 255);
-    border: 0.1125rem solid #000;
-    border-radius: 0.9375rem;
-    padding: 0.9375rem;
+.resp1:hover,
+.resp2:hover,
+.resp3:hover,
+.resp4:hover {
+    transform: scale(1.05);
 }
 
-#h3Pergunta {
-    padding: 1.25rem;
-    margin-top: 0.3125rem;
-    font-size: 2.1667rem;
-}
 
+/* Estilo dos contadores */
 .lnivel,
 .lpontos,
 .lpulos,
-.lerros,
-#btnConfirmar,
-#btnPular,
-#btnParar {
-    font-size: 1.25rem;
-    padding: 0.15625rem;
+.lerros {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
     border-radius: 0.625rem;
-    border: 0.125rem solid #000;
+    margin: 0.5rem;
+    text-align: center;
+    border: 2px solid #000;  
 }
 
 .lnivel {
     background-color: #FFCD56;
 }
 
-.lpontos,
-#btnConfirmar {
+.lpontos {
     background-color: greenyellow;
 }
 
-.lpulos,
+.lpulos {
+    background-color: #00ffff;
+}
+
+.lerros {
+    background-color: #ff0000dc;
+}
+
+/* Estilo dos botões */
+#btnConfirmar,
+#btnPular,
+#btnParar {
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 0.625rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    color: black;
+    background-color: greenyellow;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 2px solid #000; /* Borda adicionada */
+}
+
 #btnPular {
     background-color: #00ffff;
 }
 
-.lerros,
 #btnParar {
     background-color: #ff0000dc;
 }
 
-#btnConfirmar,
-#btnPular,
-#btnParar {
-    cursor: auto;
-    color: black;
-    padding: 0.3125rem;
-    font-weight: bold;
-    transition: box-shadow 0.3s; /* Adiciona transição suave na sombra */
+#btnConfirmar:hover,
+#btnPular:hover,
+#btnParar:hover {
+    transform: translateY(-3px);
 }
 
 .btnicon {
@@ -117,52 +165,67 @@ body {
     margin-bottom: 0.3125rem;
 }
 
-#btnConfirmar:hover,
-#btnPular:hover,
-#btnParar:hover {
-    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
-    cursor: auto;
-}
+/* Responsividade */
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 1rem;
+    }
 
-.lnivel,
-.lpontos,
-.lpulos,
-.lerros {
-    font-size: 1.375rem;
-}
-#cronometro{
-    color: black;
-    font-size: 1.125rem;
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    border: 0.125rem solid #000;
-    padding: 0.4rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    border-radius: 0.9375rem;
-    font-weight: bold;
-    background-color: rgba(241, 241, 241, 0.5);
-    text-align: center;
-}
-#btnPular,
-#btnParar {
-    margin-left: 0.625rem;
-}
-@media screen and (max-width: 768px){
-    #btnParar{
-        margin-top: 10px;
+    #h3Pergunta {
+        font-size: 1.5rem;
+    }
+
+    .lnivel,
+    .lpontos,
+    .lpulos,
+    .lerros {
+        font-size: 1rem;
+    }
+
+    #btnConfirmar,
+    #btnPular,
+    #btnParar {
+        font-size: 0.875rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .resp1,
+    .resp2,
+    .resp3,
+    .resp4 {
+        font-size: 1rem;
+        padding: 0.6rem;
     }
 }
-.lnivel,
-.lpontos,
-.lpulos,
-.lerros {
-    font-size: 1.375rem;
-    text-wrap: nowrap;
-}
-* {
-    cursor: auto;
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    #h3Pergunta {
+        font-size: 1.3rem;
+    }
+
+    .lnivel,
+    .lpontos,
+    .lpulos,
+    .lerros {
+        font-size: 0.875rem;
+    }
+
+    #btnConfirmar,
+    #btnPular,
+    #btnParar {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .resp1,
+    .resp2,
+    .resp3,
+    .resp4 {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
 }

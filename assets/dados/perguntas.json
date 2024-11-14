@@ -721,6 +721,30 @@
     },
     {
         "NUMERO": 99999,
+        "PERGUNTA": "Qual é o resultado da subtração 2 - 3?",
+        "RESP1": "5",
+        "RESP2": "0",
+        "RESP3": "1",
+        "RESP4": "-1",
+        "CERTA": "4",
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 99999,
+        "PERGUNTA": "Qual é o resultado da subtração 5 - 4?",
+        "RESP1": "3",
+        "RESP2": "0",
+        "RESP3": "2",
+        "RESP4": "1",
+        "CERTA": "4",
+        "NIVEL": "A",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 99999,
         "PERGUNTA": "Qual é o resultado da subtração 15 - 7?",
         "RESP1": "8",
         "RESP2": "9",
@@ -1129,6 +1153,30 @@
     },
     {
         "NUMERO": 999,
+        "PERGUNTA": "Qual a subtração de 892,50 - 800,12?",
+        "RESP1": "91.40",
+        "RESP2": "94.43",
+        "RESP3": "93.44",
+        "RESP4": "92.38",
+        "CERTA": "3",
+        "NIVEL": "D",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 999,
+        "PERGUNTA": "Qual a subtração de 333,33 - 223,99?",
+        "RESP1": "110.35",
+        "RESP2": "109.34",
+        "RESP3": "109.30",
+        "RESP4": "107.92",
+        "CERTA": "1",
+        "NIVEL": "D",
+        "JA_FOI": "N",
+        "MATERIA": "S"
+    },
+    {
+        "NUMERO": 999,
         "PERGUNTA": "Qual a subtração de 1590,75 - 999,99?",
         "RESP1": "590.76",
         "RESP2": "590.77",
@@ -1257,7 +1305,7 @@
         "CERTA": "1",
         "NIVEL": "B",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1269,7 +1317,7 @@
         "CERTA": "2",
         "NIVEL": "A",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1281,7 +1329,7 @@
         "CERTA": "1",
         "NIVEL": "A",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1293,7 +1341,7 @@
         "CERTA": "2",
         "NIVEL": "B",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1305,7 +1353,7 @@
         "CERTA": "3",
         "NIVEL": "B",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1317,7 +1365,7 @@
         "CERTA": "1",
         "NIVEL": "C",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1329,7 +1377,7 @@
         "CERTA": "2",
         "NIVEL": "C",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1341,7 +1389,7 @@
         "CERTA": "1",
         "NIVEL": "C",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1353,7 +1401,7 @@
         "CERTA": "1",
         "NIVEL": "C",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1365,7 +1413,7 @@
         "CERTA": "2",
         "NIVEL": "C",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1377,7 +1425,7 @@
         "CERTA": "1",
         "NIVEL": "D",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1389,7 +1437,7 @@
         "CERTA": "1",
         "NIVEL": "D",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1401,7 +1449,7 @@
         "CERTA": "2",
         "NIVEL": "D",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1413,7 +1461,7 @@
         "CERTA": "1",
         "NIVEL": "D",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 999,
@@ -1425,7 +1473,7 @@
         "CERTA": "4",
         "NIVEL": "D",
         "JA_FOI": "N",
-        "MATERIA": "S"
+        "MATERIA": "M"
     },
     {
         "NUMERO": 99999,

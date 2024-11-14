@@ -9,16 +9,14 @@ fetch('../dados/perguntas.json')
     })
     .then(data => {
         perguntas = data;
+        console.log('Perguntas carregadas:', perguntas); // Log para verificar as perguntas
         // Inicializar a partida após carregar as perguntas
         atualizarDadosPartida();
         sortear();
     })
     .catch(error => console.error('Erro ao carregar o JSON:', error));
 
-
 // Variáveis
-
-
 let h3Pergunta = document.getElementById('h3Pergunta');
 let labelResposta01 = document.getElementById('labelResposta01');
 let labelResposta02 = document.getElementById('labelResposta02');
@@ -172,7 +170,6 @@ function enviarpontuacao() {
         console.log('Pontuação:', pontos);
         console.log('Matéria:', materia);
 
-
         fetch('../php/inserir_pontuacao.php', {
             method: 'POST',
             body: JSON.stringify({ nomeJogador, pontos, materia }),
@@ -198,12 +195,12 @@ function enviarpontuacao() {
 }
 
 function atualizarDadosPartida() {
-
     spanNivel.innerText = `Nível: ${nivel}`;
     spanPontuacao.innerText = `Pontos: ${pontuacao}`;
     spanPulos.innerText = `Pulos: ${qtdePulos}`;
     spanErros.innerText = `Erros: ${qtdeErros}`;
 }
+
 function pular() {
     const audio = document.getElementById('audioPular');
     audio.play();
@@ -220,27 +217,48 @@ function pular() {
     atualizarDadosPartida();
     sortear();
 }
+
 function sortear() {
+    try {
+        perguntasDisponiveis = perguntas.filter(pergunta => {
+            return pergunta.MATERIA == materiaSelecionada &&
+                pergunta.NIVEL == nivel &&
+                pergunta.JA_FOI == 'N';
+        });
 
-
-    perguntasDisponiveis = perguntas.filter(pergunta => {
-        return pergunta.MATERIA == materiaSelecionada &&
-            pergunta.NIVEL == nivel &&
-            pergunta.JA_FOI == 'N';
-    });
-
-    index = Math.floor(Math.random() * perguntasDisponiveis.length);
-
-    for (let idx = 0; idx < perguntas.length; idx++) {
-        if (perguntas[idx].PERGUNTA == perguntasDisponiveis[index].PERGUNTA) {
-            perguntas[idx].JA_FOI = 'S';
-            break;
+        if (perguntasDisponiveis.length === 0) {
+            Swal.fire({
+                position: "center",
+                icon: "error",
+                title: "Não há mais perguntas disponíveis para este nível!",
+                confirmButtonText: 'OK'
+            });
+            return; // Retorna imediatamente, sem tentar sortear a pergunta
         }
-    }
 
-    h3Pergunta.innerText = perguntasDisponiveis[index].PERGUNTA;
-    labelResposta01.innerText = perguntasDisponiveis[index].RESP1;
-    labelResposta02.innerText = perguntasDisponiveis[index].RESP2;
-    labelResposta03.innerText = perguntasDisponiveis[index].RESP3;
-    labelResposta04.innerText = perguntasDisponiveis[index].RESP4;
+        index = Math.floor(Math.random() * perguntasDisponiveis.length);
+
+        // Marca a pergunta como já foi utilizada
+        for (let idx = 0; idx < perguntas.length; idx++) {
+            if (perguntas[idx].PERGUNTA == perguntasDisponiveis[index].PERGUNTA) {
+                perguntas[idx].JA_FOI = 'S';
+                break;
+            }
+        }
+
+        // Exibindo a pergunta e suas respostas
+        h3Pergunta.innerText = perguntasDisponiveis[index].PERGUNTA;
+        labelResposta01.innerText = perguntasDisponiveis[index].RESP1;
+        labelResposta02.innerText = perguntasDisponiveis[index].RESP2;
+        labelResposta03.innerText = perguntasDisponiveis[index].RESP3;
+        labelResposta04.innerText = perguntasDisponiveis[index].RESP4;
+    } catch (error) {
+        console.error("Erro ao sortear a pergunta:", error);
+        Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "Erro ao sortear a pergunta!",
+            confirmButtonText: 'OK'
+        });
+    }
 }
