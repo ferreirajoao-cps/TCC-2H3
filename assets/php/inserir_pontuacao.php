@@ -1,26 +1,22 @@
 <?php
-// Configuração da conexão com o banco de dados
 $servername = "sql204.infinityfree.com";
 $username = "if0_37323049";
 $password = "SC9Ln7M36S";
 $dbname = "if0_37323049_matemax";
 
-// Crie uma conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verifique a conexão
 if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
 }
 
-// Configurar a conexão para utilizar utf8mb4 (caso você mude o charset no banco de dados)
 $conn->set_charset("utf8mb4");
 
 // Receber os dados do jogador, pontuação e matéria do cliente
 $data = json_decode(file_get_contents("php://input"), true);
 $nomeJogador = $data['nomeJogador'] ?? null;
 $pontuacao = $data['pontos'] ?? null;
-$materia = $data['materia'] ?? null;  // A matéria será algo como 'A', 'S', 'M' ou 'D'
+$materia = $data['materia'] ?? null; 
 
 // Validar se os dados essenciais foram recebidos
 if (!$nomeJogador || !$pontuacao || !$materia) {
@@ -49,7 +45,7 @@ if ($result->num_rows > 0) {
     }
 }
 
-// Verificar se a matéria existe e obter o id_op (deve estar previamente inserida na tabela "operacao")
+// Verificar se a matéria existe e obter o id_op
 $stmtMateria = $conn->prepare("SELECT id_op FROM operacao WHERE materia = ?");
 $stmtMateria->bind_param("s", $materia);
 $stmtMateria->execute();
@@ -73,6 +69,5 @@ if ($stmtPontuacao->execute()) {
     echo "Erro ao inserir pontuação: " . $conn->error;
 }
 
-// Fechar a conexão com o banco de dados
 $conn->close();
 ?>

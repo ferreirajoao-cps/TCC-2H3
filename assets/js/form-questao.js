@@ -164,7 +164,7 @@ function enviarpontuacao() {
     return new Promise((resolve, reject) => {
         const nomeJogador = localStorage.getItem('nomeJogador');
         const materia = sessionStorage.getItem('materia-selecionada');
-        const pontos = pontuacao; // Certifique-se de que esta variável está definida
+        const pontos = pontuacao; 
 
         console.log('Nome do Jogador:', nomeJogador);
         console.log('Pontuação:', pontos);
@@ -185,7 +185,6 @@ function enviarpontuacao() {
             })
             .then(data => {
                 console.log(data);
-                alert(data);
                 resolve();
             })
             .catch(error => {
